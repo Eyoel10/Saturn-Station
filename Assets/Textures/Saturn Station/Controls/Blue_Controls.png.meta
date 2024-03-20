@@ -128,10 +128,10 @@ TextureImporter:
       name: Blue_Controls_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 137
-        width: 160
-        height: 177
+        x: 9
+        y: 8
+        width: 435
+        height: 436
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,101 +145,18 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Blue_Controls_1
-      rect:
-        serializedVersion: 2
-        x: 139
-        y: 284
-        width: 176
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b760ee59622987750800000000000000
-      internalID: 6302948372926826107
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Controls_2
-      rect:
-        serializedVersion: 2
-        x: 285
-        y: 137
-        width: 160
-        height: 177
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6bdf6b32cbcf66910800000000000000
-      internalID: 1830428183555931574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Controls_3
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 168
-        width: 115
-        height: 115
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 039a21f87c1ea6920800000000000000
-      internalID: 2984445950301481264
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue_Controls_4
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 7
-        width: 177
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7fcb82e7880616b30800000000000000
-      internalID: 4278807260327099639
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b025dd2d675d24e8083270e2204d8ff5
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Blue_Controls_0: 4807991081982243300
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

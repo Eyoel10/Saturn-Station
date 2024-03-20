@@ -3,7 +3,16 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Level1
+  - Level2
+  - Level3
+  - Level4
+  - Level5
+  - Level6
+  - Level7
+  - Ball
+  - Edge
   layers:
   - Default
   - TransparentFX
@@ -40,4 +49,13 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2909327605
+    locked: 0
+  - name: Foreground
+    uniqueID: 1637368713
+    locked: 0
+  - name: UI
+    uniqueID: 4213975549
     locked: 0

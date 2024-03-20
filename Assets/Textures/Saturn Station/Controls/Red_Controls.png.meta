@@ -128,103 +128,19 @@ TextureImporter:
       name: Red_Controls_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 137
-        width: 161
-        height: 177
+        x: 9
+        y: 8
+        width: 435
+        height: 437
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 50098a024d0c6f050800000000000000
-      internalID: 5834062384618573829
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Red_Controls_1
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 285
-        width: 177
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a1cbff7b8010dc000800000000000000
-      internalID: 57703507184040986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Red_Controls_2
-      rect:
-        serializedVersion: 2
-        x: 285
-        y: 137
-        width: 160
-        height: 182
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f8acfaffb4f0e56c0800000000000000
-      internalID: -4152864987302344049
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Red_Controls_3
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 7
-        width: 177
-        height: 161
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 02e7748d56e7a65c0800000000000000
-      internalID: -4221422724821058016
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Red_Controls_4
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 168
-        width: 116
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 671f986405faf4270800000000000000
-      internalID: 8236995002799616374
+      spriteID: 6f37a5a628a6d4b2b8ad1448f8d68274
+      internalID: -2135785068
       vertices: []
       indices: 
       edges: []
@@ -232,14 +148,15 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d012c907e5c4e4b6bbccc22926a9b055
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Red_Controls_0: -2135785068
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

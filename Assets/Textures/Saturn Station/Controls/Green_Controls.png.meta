@@ -128,103 +128,19 @@ TextureImporter:
       name: Green_Controls_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 137
-        width: 161
-        height: 180
+        x: 9
+        y: 7
+        width: 435
+        height: 437
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6048f4670d7f89f80800000000000000
-      internalID: -8099451455115656186
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Green_Controls_1
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 283
-        width: 177
-        height: 162
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b5fd438bb3c302f60800000000000000
-      internalID: 8007466364655951707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Green_Controls_2
-      rect:
-        serializedVersion: 2
-        x: 284
-        y: 137
-        width: 161
-        height: 177
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8f8bfa1246b47df00800000000000000
-      internalID: 1141463923995687160
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Green_Controls_3
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 6
-        width: 177
-        height: 162
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 06e21c389b5455e60800000000000000
-      internalID: 7950337380274220640
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Green_Controls_4
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 168
-        width: 115
-        height: 114
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3dcf92db7a7214ed0800000000000000
-      internalID: -2431618722416689965
+      spriteID: 91cd5383565bd49febbf919272ff1e09
+      internalID: -570695135
       vertices: []
       indices: 
       edges: []
@@ -232,14 +148,15 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 040f1a1ac68f74d3480c51da6d961eb6
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Green_Controls_0: -570695135
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -128,103 +128,19 @@ TextureImporter:
       name: Yellow_Controls_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 137
-        width: 161
-        height: 177
+        x: 9
+        y: 8
+        width: 437
+        height: 436
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 67a8cb15dcd01ceb0800000000000000
-      internalID: -4701461360507319690
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Yellow_Controls_1
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 283
-        width: 178
-        height: 162
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b3882d8e100f48640800000000000000
-      internalID: 5081450170572507195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Yellow_Controls_2
-      rect:
-        serializedVersion: 2
-        x: 169
-        y: 168
-        width: 115
-        height: 116
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ecba80fd27f5f2390800000000000000
-      internalID: -7840943479255946290
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Yellow_Controls_3
-      rect:
-        serializedVersion: 2
-        x: 285
-        y: 137
-        width: 162
-        height: 288
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d13d140279a595b20800000000000000
-      internalID: 3123627421685895965
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Yellow_Controls_4
-      rect:
-        serializedVersion: 2
-        x: 138
-        y: 7
-        width: 177
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c90041de0a2bd9500800000000000000
-      internalID: 404675945775235228
+      spriteID: b468c45575b7a423493e8c8f4d2870e9
+      internalID: 136207720
       vertices: []
       indices: 
       edges: []
@@ -232,14 +148,15 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5ee99dff7569246cd943599fce322154
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Yellow_Controls_0: 136207720
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
