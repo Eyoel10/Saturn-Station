@@ -239,7 +239,12 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Red_Ship_0: 4123452264774187263
+      Red_Ship_1: -8246236277325714386
+      Red_Ship_2: 9221732497096617442
+      Red_Ship_3: 135488761503573268
+      Red_Ship_4: 8177922602440295079
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
