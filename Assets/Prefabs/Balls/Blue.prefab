@@ -149,7 +149,7 @@ GameObject:
   - component: {fileID: 6192423980463819416}
   - component: {fileID: 4970407091640111128}
   - component: {fileID: -6080582570850604433}
-  - component: {fileID: -2563673672970637444}
+  - component: {fileID: 1400838998687765250}
   m_Layer: 0
   m_Name: Blue
   m_TagString: Ball
@@ -295,7 +295,7 @@ MonoBehaviour:
   - {fileID: -6659350732076689084, guid: a011ba6e7771b4745acfbb8e238c70c5, type: 3}
   - {fileID: -6112098268171339054, guid: f5bb45c3370e544b8b75505de49680b7, type: 3}
   - {fileID: -6638914334086153399, guid: 4b5fc29154baf4170a927d86df2d5aa4, type: 3}
---- !u!114 &-2563673672970637444
+--- !u!114 &1400838998687765250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -481,9 +481,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1637368713
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

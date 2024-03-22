@@ -174,9 +174,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1637368713
+  m_SortingLayer: 2
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 3401779926117698497}
   - component: {fileID: 42784441345751828}
   - component: {fileID: -8447780075649804769}
-  - component: {fileID: -1668373593715053018}
+  - component: {fileID: -1719198065166922845}
   m_Layer: 0
   m_Name: Orange
   m_TagString: Ball
@@ -347,7 +347,7 @@ MonoBehaviour:
   - {fileID: -6659350732076689084, guid: a011ba6e7771b4745acfbb8e238c70c5, type: 3}
   - {fileID: -6112098268171339054, guid: f5bb45c3370e544b8b75505de49680b7, type: 3}
   - {fileID: -6638914334086153399, guid: 4b5fc29154baf4170a927d86df2d5aa4, type: 3}
---- !u!114 &-1668373593715053018
+--- !u!114 &-1719198065166922845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

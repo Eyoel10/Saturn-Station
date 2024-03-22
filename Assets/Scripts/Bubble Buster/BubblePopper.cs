@@ -10,8 +10,9 @@ public class BubblePopper : MonoBehaviour
     float wrongTime = 0.5f;
     float correctTime = 1.5f;
     bool hasCountDownFinished = false;
+    bool isCountDownCalled = false;
     public GameObject[] clickedBubbles = new GameObject[2];
-
+    public BubbleScore Scorer;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,17 +44,24 @@ public class BubblePopper : MonoBehaviour
             // If the sum is 10
             if (checkSum(clickedBubbles, 10))
             {
+                print("Sum of " + clickedBubbles[0].GetComponent<BallType>().ball.value + " and " + clickedBubbles[1].GetComponent<BallType>().ball.value + " is 10");
                 // Render the Cyan border for both bubbles
                 for (int i = 0; i < clickedBubbles.Length; i++)
                 {
                     clickedBubbles[i].GetComponent<PopBubble>().myBorder.GetComponent<SpriteRenderer>().sprite = clickedBubbles[i].GetComponent<PopBubble>().borders[0];
                 }
                 // Wait for a certain amount of time to Pop bubbles
-                StartCoroutine(Countdown(correctTime));
+                if (!isCountDownCalled)
+                {
+                    isCountDownCalled = true;
+                    Scorer.StopTimer();
+                    StartCoroutine(Countdown(correctTime));
+                }
             }
             // If not remove the bubbles from array
             else
             {
+                print("A");
                 // Render the Red border for both bubbles
                 for (int i = 0; i < clickedBubbles.Length; i++)
                 {
@@ -103,6 +111,7 @@ public class BubblePopper : MonoBehaviour
     // Makes all the elements of the array null
     void ClearArray()
     {
+        print("Clear array called");
         for (int i = 0; i < clickedBubbles.Length; i++)
         {
             // Removes border if it is on the bubble
@@ -112,6 +121,7 @@ public class BubblePopper : MonoBehaviour
             }
             clickedBubbles[i] = null;
         }
+        print("Cleared Array: " + clickedBubbles[0]);
     }
 
     // Counts down from a duration on a thread outside the main thread and does a function after depending on the given duration time
@@ -119,7 +129,7 @@ public class BubblePopper : MonoBehaviour
     {
         float timer = 0f;
         hasCountDownFinished = false;
-
+        //print("Count down called");
         while (timer < duration)
         {
             timer += Time.deltaTime;
@@ -130,13 +140,21 @@ public class BubblePopper : MonoBehaviour
         {
             if (duration == correctTime)
             {
+                print("Pop bubble and clear array with duration: " + duration);
                 PopBubbles();
+                ClearArray();
+                Scorer.UpdateScore();
+                Scorer.AddPair();
+                Scorer.StartTimer();
                 hasCountDownFinished = true;
+                isCountDownCalled = false;
             }
             else if (duration == wrongTime)
             {
+                print("Wrong time clear array with duration: " + duration);
                 ClearArray();
                 hasCountDownFinished = true;
+                isCountDownCalled = false;
             }
         }
     }
