@@ -1,0 +1,3902 @@
+fileFormatVersion: 2
+guid: 69c80d9cf07834b389fa54f2d9c6409d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3353718495594138438
+    second: FarStars_0
+  - first:
+      213: 8957567175051541700
+    second: FarStars_1
+  - first:
+      213: -5380586061244852142
+    second: FarStars_2
+  - first:
+      213: 4922442897162120071
+    second: FarStars_3
+  - first:
+      213: 4294703619386314522
+    second: FarStars_4
+  - first:
+      213: 7590607810551726446
+    second: FarStars_5
+  - first:
+      213: 619077024473912790
+    second: FarStars_6
+  - first:
+      213: 7193206319169957501
+    second: FarStars_7
+  - first:
+      213: 124020254409480835
+    second: FarStars_8
+  - first:
+      213: -5494960065086154059
+    second: FarStars_9
+  - first:
+      213: 8168358764564333411
+    second: FarStars_10
+  - first:
+      213: 522463058775116952
+    second: FarStars_11
+  - first:
+      213: -4248496040892382265
+    second: FarStars_12
+  - first:
+      213: 1861633045236876920
+    second: FarStars_13
+  - first:
+      213: 8413676301966888076
+    second: FarStars_14
+  - first:
+      213: -6271330275667792121
+    second: FarStars_15
+  - first:
+      213: 8700136724343046661
+    second: FarStars_16
+  - first:
+      213: -5105976346186415881
+    second: FarStars_17
+  - first:
+      213: 3369412174958769437
+    second: FarStars_18
+  - first:
+      213: -4737052748599497566
+    second: FarStars_19
+  - first:
+      213: 432949986458165681
+    second: FarStars_20
+  - first:
+      213: -2050226715949479467
+    second: FarStars_21
+  - first:
+      213: 170107585991625097
+    second: FarStars_22
+  - first:
+      213: 8356089428051509348
+    second: FarStars_23
+  - first:
+      213: 8622713487656831298
+    second: FarStars_24
+  - first:
+      213: -2199231884895682113
+    second: FarStars_25
+  - first:
+      213: 8767236335628209954
+    second: FarStars_26
+  - first:
+      213: 3858528748412905525
+    second: FarStars_27
+  - first:
+      213: 7619826695692561609
+    second: FarStars_28
+  - first:
+      213: 9000201872582487838
+    second: FarStars_29
+  - first:
+      213: -6127551235486094761
+    second: FarStars_30
+  - first:
+      213: 6017716997716396743
+    second: FarStars_31
+  - first:
+      213: -1900016408991772983
+    second: FarStars_32
+  - first:
+      213: 4070678681773693120
+    second: FarStars_33
+  - first:
+      213: -4959017172156499786
+    second: FarStars_34
+  - first:
+      213: 5897743715173075693
+    second: FarStars_35
+  - first:
+      213: 7371553220551351268
+    second: FarStars_36
+  - first:
+      213: 12204489941143401
+    second: FarStars_37
+  - first:
+      213: -3435022192720497182
+    second: FarStars_38
+  - first:
+      213: -3232950557089105322
+    second: FarStars_39
+  - first:
+      213: -499474086629471447
+    second: FarStars_40
+  - first:
+      213: -4222607179957157275
+    second: FarStars_41
+  - first:
+      213: -7991492810984240074
+    second: FarStars_42
+  - first:
+      213: -6590651019255534882
+    second: FarStars_43
+  - first:
+      213: 5512320655832856357
+    second: FarStars_44
+  - first:
+      213: -4729065481037423804
+    second: FarStars_45
+  - first:
+      213: -1382462123789710295
+    second: FarStars_46
+  - first:
+      213: -3609709572543657365
+    second: FarStars_47
+  - first:
+      213: -3868681566039604931
+    second: FarStars_48
+  - first:
+      213: -1169272567227972668
+    second: FarStars_49
+  - first:
+      213: -1914336617263387991
+    second: FarStars_50
+  - first:
+      213: -1456674939557655593
+    second: FarStars_51
+  - first:
+      213: 5813611933378359671
+    second: FarStars_52
+  - first:
+      213: 8856339252574776949
+    second: FarStars_53
+  - first:
+      213: 8946975414549285491
+    second: FarStars_54
+  - first:
+      213: 85298963509017931
+    second: FarStars_55
+  - first:
+      213: 7335190739462935034
+    second: FarStars_56
+  - first:
+      213: 7748801779840108553
+    second: FarStars_57
+  - first:
+      213: 8824456261691582894
+    second: FarStars_58
+  - first:
+      213: -369932817162166436
+    second: FarStars_59
+  - first:
+      213: -1026114382666087563
+    second: FarStars_60
+  - first:
+      213: -4840271407486135316
+    second: FarStars_61
+  - first:
+      213: 5486392191266726281
+    second: FarStars_62
+  - first:
+      213: 3909574009735317598
+    second: FarStars_63
+  - first:
+      213: -2038859988914705440
+    second: FarStars_64
+  - first:
+      213: -4665183879532610772
+    second: FarStars_65
+  - first:
+      213: -562743622262427710
+    second: FarStars_66
+  - first:
+      213: -8654642029322153641
+    second: FarStars_67
+  - first:
+      213: -5457988494668956762
+    second: FarStars_68
+  - first:
+      213: 339413414752274091
+    second: FarStars_69
+  - first:
+      213: 4681367633873721737
+    second: FarStars_70
+  - first:
+      213: -8138621610647435453
+    second: FarStars_71
+  - first:
+      213: -3323909533319592120
+    second: FarStars_72
+  - first:
+      213: 5552029839570432746
+    second: FarStars_73
+  - first:
+      213: -5802970117527310670
+    second: FarStars_74
+  - first:
+      213: -4547299444957965179
+    second: FarStars_75
+  - first:
+      213: 182285417048977587
+    second: FarStars_76
+  - first:
+      213: -6122676312081000436
+    second: FarStars_77
+  - first:
+      213: -8397690586984653467
+    second: FarStars_78
+  - first:
+      213: 1400634089931350644
+    second: FarStars_79
+  - first:
+      213: 7001061097711046129
+    second: FarStars_80
+  - first:
+      213: -7547937443072297035
+    second: FarStars_81
+  - first:
+      213: 4202873710801814511
+    second: FarStars_82
+  - first:
+      213: -8276521247291994734
+    second: FarStars_83
+  - first:
+      213: 3185239636734723172
+    second: FarStars_84
+  - first:
+      213: -4253991609450713356
+    second: FarStars_85
+  - first:
+      213: -6205271108523397636
+    second: FarStars_86
+  - first:
+      213: -6103802223477733683
+    second: FarStars_87
+  - first:
+      213: 4937307841586892144
+    second: FarStars_88
+  - first:
+      213: 4488172312831357725
+    second: FarStars_89
+  - first:
+      213: 516501091787486921
+    second: FarStars_90
+  - first:
+      213: -1346775489821790355
+    second: FarStars_91
+  - first:
+      213: -1534559819811445903
+    second: FarStars_92
+  - first:
+      213: -6532190054639947525
+    second: FarStars_93
+  - first:
+      213: 7387820031438946565
+    second: FarStars_94
+  - first:
+      213: -1969725619499196645
+    second: FarStars_95
+  - first:
+      213: 3748782007005234678
+    second: FarStars_96
+  - first:
+      213: 2597022945370320763
+    second: FarStars_97
+  - first:
+      213: 8457682591480256282
+    second: FarStars_98
+  - first:
+      213: -110292060291064628
+    second: FarStars_99
+  - first:
+      213: -7474804493885333086
+    second: FarStars_100
+  - first:
+      213: -6539415454679883415
+    second: FarStars_101
+  - first:
+      213: -2810220168656839150
+    second: FarStars_102
+  - first:
+      213: -8934052740373787768
+    second: FarStars_103
+  - first:
+      213: -760436216048279804
+    second: FarStars_104
+  - first:
+      213: 5030226791541672871
+    second: FarStars_105
+  - first:
+      213: -1251734971541765032
+    second: FarStars_106
+  - first:
+      213: 6777354138446351547
+    second: FarStars_107
+  - first:
+      213: 6794917739366397595
+    second: FarStars_108
+  - first:
+      213: 7549689018449303799
+    second: FarStars_109
+  - first:
+      213: -3125301842106838556
+    second: FarStars_110
+  - first:
+      213: 4479724855982156579
+    second: FarStars_111
+  - first:
+      213: 2754825846087982689
+    second: FarStars_112
+  - first:
+      213: 250403721024703724
+    second: FarStars_113
+  - first:
+      213: 7316455047153903529
+    second: FarStars_114
+  - first:
+      213: -8115880708877512695
+    second: FarStars_115
+  - first:
+      213: 6102280094471379804
+    second: FarStars_116
+  - first:
+      213: 49428505091172058
+    second: FarStars_117
+  - first:
+      213: -6757525468069412033
+    second: FarStars_118
+  - first:
+      213: -2721511057210210610
+    second: FarStars_119
+  - first:
+      213: -3345937903266932090
+    second: FarStars_120
+  - first:
+      213: 41012252858700918
+    second: FarStars_121
+  - first:
+      213: 691737318650948810
+    second: FarStars_122
+  - first:
+      213: 1260550538839318470
+    second: FarStars_123
+  - first:
+      213: 1625271817071976696
+    second: FarStars_124
+  - first:
+      213: 4527302778582405324
+    second: FarStars_125
+  - first:
+      213: -2350576542716968246
+    second: FarStars_126
+  - first:
+      213: 421761539433727047
+    second: FarStars_127
+  - first:
+      213: 3096249447327460788
+    second: FarStars_128
+  - first:
+      213: 9210046800700087645
+    second: FarStars_129
+  - first:
+      213: 8699643689419994481
+    second: FarStars_130
+  - first:
+      213: -82426419930667222
+    second: FarStars_131
+  - first:
+      213: -3039526088924121033
+    second: FarStars_132
+  - first:
+      213: -4582971518707819385
+    second: FarStars_133
+  - first:
+      213: -195821082687037508
+    second: FarStars_134
+  - first:
+      213: -141833223432869994
+    second: FarStars_135
+  - first:
+      213: -5757977671748214656
+    second: FarStars_136
+  - first:
+      213: 4868060318230218558
+    second: FarStars_137
+  - first:
+      213: 7448643250108415154
+    second: FarStars_138
+  - first:
+      213: 810368944275070037
+    second: FarStars_139
+  - first:
+      213: 3662652583891116764
+    second: FarStars_140
+  - first:
+      213: 2872521651504219453
+    second: FarStars_141
+  - first:
+      213: -2001869408139165362
+    second: FarStars_142
+  - first:
+      213: 4664969063441415013
+    second: FarStars_143
+  - first:
+      213: -474700764277448262
+    second: FarStars_144
+  - first:
+      213: 3356690334924690985
+    second: FarStars_145
+  - first:
+      213: -1306076313598317557
+    second: FarStars_146
+  - first:
+      213: -1005158011354232472
+    second: FarStars_147
+  - first:
+      213: -9083114554833691692
+    second: FarStars_148
+  - first:
+      213: 8386252765934162511
+    second: FarStars_149
+  - first:
+      213: 6822547248553468283
+    second: FarStars_150
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FarStars_0
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 535
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab434790cc23571d0800000000000000
+      internalID: -3353718495594138438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 537
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cc75a0f2ebaf4c70800000000000000
+      internalID: 8957567175051541700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_2
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 523
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25815102c715455b0800000000000000
+      internalID: -5380586061244852142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_3
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 518
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78b2e781cb7005440800000000000000
+      internalID: 4922442897162120071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_4
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 521
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f0b11003ad99b30800000000000000
+      internalID: 4294703619386314522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_5
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 503
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61cd314691475960800000000000000
+      internalID: 7590607810551726446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_6
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 535
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d59f541647679800800000000000000
+      internalID: 619077024473912790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_7
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 537
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e683a390763d360800000000000000
+      internalID: 7193206319169957501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_8
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 523
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38ad709a3cb98b100800000000000000
+      internalID: 124020254409480835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_9
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 518
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba15913feafdb3b0800000000000000
+      internalID: -5494960065086154059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_10
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 521
+        width: 32
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3634ecfb407db5170800000000000000
+      internalID: 8168358764564333411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_11
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 503
+        width: 41
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89c0e824269204700800000000000000
+      internalID: 522463058775116952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_12
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 487
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c3c4fc3c5f4a05c0800000000000000
+      internalID: -4248496040892382265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_13
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 491
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876097b2469d5d910800000000000000
+      internalID: 1861633045236876920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_14
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 500
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ccbd1e40263c470800000000000000
+      internalID: 8413676301966888076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_15
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 505
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f2ba95752c7f8a0800000000000000
+      internalID: -6271330275667792121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_16
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 489
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5024cc761481db870800000000000000
+      internalID: 8700136724343046661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_17
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 492
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f00306d09de329b0800000000000000
+      internalID: -5105976346186415881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_18
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 497
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d153b4e658e82ce20800000000000000
+      internalID: 3369412174958769437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_19
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 502
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ac60758f9b924eb0800000000000000
+      internalID: -4737052748599497566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_20
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 487
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1695408b5220600800000000000000
+      internalID: 432949986458165681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_21
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 491
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d9c0d61aa12c83e0800000000000000
+      internalID: -2050226715949479467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_22
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 500
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98941acb2f75c5200800000000000000
+      internalID: 170107585991625097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_23
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 505
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4604866ff0bc6f370800000000000000
+      internalID: 8356089428051509348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_24
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 489
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24941cf5b380aa770800000000000000
+      internalID: 8622713487656831298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_25
+      rect:
+        serializedVersion: 2
+        x: 731
+        y: 492
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb18412b042ca71e0800000000000000
+      internalID: -2199231884895682113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_26
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 497
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22f44071ffa7ba970800000000000000
+      internalID: 8767236335628209954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_27
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 502
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 538a8cc047f3c8530800000000000000
+      internalID: 3858528748412905525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_28
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 470
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cc2bc612001fb960800000000000000
+      internalID: 7619826695692561609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_29
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 454
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1fa5120be327ec70800000000000000
+      internalID: 9000201872582487838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_30
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 470
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a68d1dd9096faa0800000000000000
+      internalID: -6127551235486094761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_31
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 454
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca47b7e9b9338350800000000000000
+      internalID: 6017716997716396743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_32
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 454
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cec1aa8429c1a5e0800000000000000
+      internalID: -1900016408991772983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_33
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 431
+        width: 36
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c850e591b4fd7830800000000000000
+      internalID: 4070678681773693120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_34
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 453
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8bc8ae7280e2bb0800000000000000
+      internalID: -4959017172156499786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_35
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 470
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea0f2f49aef8d150800000000000000
+      internalID: 5897743715173075693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_36
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 444
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4eb99d119940d4660800000000000000
+      internalID: 7371553220551351268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_37
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 457
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f4b9f3beb5b2000800000000000000
+      internalID: 12204489941143401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_38
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 445
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e5bf47e3895450d0800000000000000
+      internalID: -3435022192720497182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_39
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 400
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a7d44e8904223d0800000000000000
+      internalID: -3232950557089105322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_40
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 426
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b00fbe6f28119f0800000000000000
+      internalID: -499474086629471447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_41
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 409
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562c3a464294665c0800000000000000
+      internalID: -4222607179957157275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_42
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 400
+        width: 37
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63c423011a3881190800000000000000
+      internalID: -7991492810984240074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_43
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 426
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eda25b611dd4984a0800000000000000
+      internalID: -6590651019255534882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_44
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 409
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52737f25e62bf7c40800000000000000
+      internalID: 5512320655832856357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_45
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 393
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44bd33b200cfe5eb0800000000000000
+      internalID: -4729065481037423804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_46
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 390
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92c0514e50280dce0800000000000000
+      internalID: -1382462123789710295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_47
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 401
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6a4532d44cb7edc0800000000000000
+      internalID: -3609709572543657365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_48
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 396
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d318b13ec9eaf4ac0800000000000000
+      internalID: -3868681566039604931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_49
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 390
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c384c09bc8e5cfe0800000000000000
+      internalID: -1169272567227972668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_50
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 401
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aa2e7b3df8ee65e0800000000000000
+      internalID: -1914336617263387991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_51
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 387
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dbc37a3cd9d8cbe0800000000000000
+      internalID: -1456674939557655593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_52
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 387
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7713df660491ea050800000000000000
+      internalID: 5813611933378359671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_53
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 364
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57e611890a908ea70800000000000000
+      internalID: 8856339252574776949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_54
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 328
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37a0d568cba0a2c70800000000000000
+      internalID: 8946975414549285491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_55
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 354
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4df9a394fa0f2100800000000000000
+      internalID: 85298963509017931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_56
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 365
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af15c613d15dbc560800000000000000
+      internalID: 7335190739462935034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_57
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 354
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 908c842f926498b60800000000000000
+      internalID: 7748801779840108553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_58
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 349
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9291e4734c67a70800000000000000
+      internalID: 8824456261691582894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_59
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 321
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f1a42101cbddaf0800000000000000
+      internalID: -369932817162166436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_60
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 321
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573c442d76282c1f0800000000000000
+      internalID: -1026114382666087563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_61
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 321
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce31f4cbcc6e3dcb0800000000000000
+      internalID: -4840271407486135316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_62
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 335
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9812eea31a4932c40800000000000000
+      internalID: 5486392191266726281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_63
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 282
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e588f5919d8914630800000000000000
+      internalID: 3909574009735317598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_64
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 291
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb6bf574a384b3e0800000000000000
+      internalID: -2038859988914705440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_65
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 311
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b74909affe14fb0800000000000000
+      internalID: -4665183879532610772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_66
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 305
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf6e6738abb038f0800000000000000
+      internalID: -562743622262427710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_67
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 282
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7515618bde884e780800000000000000
+      internalID: -8654642029322153641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_68
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 265
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ab761bb1645144b0800000000000000
+      internalID: -5457988494668956762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_69
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 267
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba6cf42d3b6d5b400800000000000000
+      internalID: 339413414752274091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_70
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 267
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989dd006f0f87f040800000000000000
+      internalID: 4681367633873721737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_71
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 253
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347ca00f3cecd0f80800000000000000
+      internalID: -8138621610647435453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_72
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 273
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84783f8e3e91fd1d0800000000000000
+      internalID: -3323909533319592120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_73
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 280
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae2f6f129b5cc0d40800000000000000
+      internalID: 5552029839570432746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_74
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 282
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bee39e6c65b77fa0800000000000000
+      internalID: -5802970117527310670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_75
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 233
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58413f75f3fb4e0c0800000000000000
+      internalID: -4547299444957965179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_76
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 265
+        width: 19
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b030fafe9b978200800000000000000
+      internalID: 182285417048977587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_77
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 248
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0896bf5552e70ba0800000000000000
+      internalID: -6122676312081000436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_78
+      rect:
+        serializedVersion: 2
+        x: 897
+        y: 234
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56d532d67e8657b80800000000000000
+      internalID: -8397690586984653467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_79
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 221
+        width: 48
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47229aea84d007310800000000000000
+      internalID: 1400634089931350644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_80
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 248
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fd8fd3a9f3c82160800000000000000
+      internalID: 7001061097711046129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_81
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 221
+        width: 39
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b73eced2e6504790800000000000000
+      internalID: -7547937443072297035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_82
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 230
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe38b284f5b935a30800000000000000
+      internalID: 4202873710801814511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_83
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 235
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29d0037c6c3e32d80800000000000000
+      internalID: -8276521247291994734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_84
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 217
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4644110d29e343c20800000000000000
+      internalID: 3185239636734723172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_85
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 200
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fea2397b29c6f4c0800000000000000
+      internalID: -4253991609450713356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_86
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 219
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfde771cdc272e9a0800000000000000
+      internalID: -6205271108523397636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_87
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 184
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6ce529730fa4ba0800000000000000
+      internalID: -6103802223477733683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_88
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 179
+        width: 40
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07d898ca257d48440800000000000000
+      internalID: 4937307841586892144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_89
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 217
+        width: 33
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d137e0d60f0394e30800000000000000
+      internalID: 4488172312831357725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_90
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 174
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c63816a10bfa2700800000000000000
+      internalID: 516501091787486921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_91
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 184
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f28f8d3da4f4de0800000000000000
+      internalID: -1346775489821790355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_92
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 187
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1732d8d69f524bae0800000000000000
+      internalID: -1534559819811445903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_93
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 174
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0b8db11cff855a0800000000000000
+      internalID: -6532190054639947525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_94
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 187
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5010f6e1d2fc68660800000000000000
+      internalID: 7387820031438946565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_95
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 184
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f93c03cf02aa4e0800000000000000
+      internalID: -1969725619499196645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_96
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 161
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f54ceb9f59560430800000000000000
+      internalID: 3748782007005234678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_97
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 172
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7f2654fb9a7a0420800000000000000
+      internalID: 2597022945370320763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_98
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 182
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a179f289189bf5570800000000000000
+      internalID: 8457682591480256282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_99
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 175
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc1ecc94f9287ef0800000000000000
+      internalID: -110292060291064628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_100
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 175
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1a8708ae8244890800000000000000
+      internalID: -7474804493885333086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_101
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 151
+        width: 33
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9612b119a445f35a0800000000000000
+      internalID: -6539415454679883415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_102
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 130
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e129255a71009d0800000000000000
+      internalID: -2810220168656839150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_103
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 156
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88b4a650e5ed30480800000000000000
+      internalID: -8934052740373787768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_104
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 130
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40f991c5a436275f0800000000000000
+      internalID: -760436216048279804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_105
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 139
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab8e799d94fec540800000000000000
+      internalID: 5030226791541672871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_106
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 123
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 854c154eca1f0aee0800000000000000
+      internalID: -1251734971541765032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_107
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 120
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc4e135eaffd0e50800000000000000
+      internalID: 6777354138446351547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_108
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 120
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b963fe4dea56c4e50800000000000000
+      internalID: 6794917739366397595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_109
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 131
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f8965d8922e5c860800000000000000
+      internalID: 7549689018449303799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_110
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 117
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e1195d7882b0a4d0800000000000000
+      internalID: -3125301842106838556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_111
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 117
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32bed4c950e2b2e30800000000000000
+      internalID: 4479724855982156579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_112
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 94
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16e9326e28b1b3620800000000000000
+      internalID: 2754825846087982689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_113
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 58
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec0d1a8bdc997300800000000000000
+      internalID: 250403721024703724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_114
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a7e8b4e915498560800000000000000
+      internalID: 7316455047153903529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_115
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 79
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90019ebbe799e5f80800000000000000
+      internalID: -8115880708877512695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_116
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 65
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b57e62a67afa450800000000000000
+      internalID: 6102280094471379804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_117
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 58
+        width: 41
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad6ecb7a6fa9fa000800000000000000
+      internalID: 49428505091172058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_118
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 84
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f334113c3627832a0800000000000000
+      internalID: -6757525468069412033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_119
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 79
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec600b6dc104b3ad0800000000000000
+      internalID: -2721511057210210610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_120
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 51
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a524b5437d091d0800000000000000
+      internalID: -3345937903266932090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_121
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 51
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 674d41b3d64b19000800000000000000
+      internalID: 41012252858700918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_122
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 68
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc22142d6b899900800000000000000
+      internalID: 691737318650948810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_123
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 51
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cfd1f059006e7110800000000000000
+      internalID: 1260550538839318470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_124
+      rect:
+        serializedVersion: 2
+        x: 886
+        y: 51
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f067084b102e8610800000000000000
+      internalID: 1625271817071976696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_125
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 65
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc01b04f3e534de30800000000000000
+      internalID: 4527302778582405324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_126
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 46
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac24df99613116fd0800000000000000
+      internalID: -2350576542716968246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_127
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 60
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7448ed1b2e56ad500800000000000000
+      internalID: 421761539433727047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_128
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 36
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bde3fbb77618fa20800000000000000
+      internalID: 3096249447327460788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_129
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d9370b4c8a0df70800000000000000
+      internalID: 9210046800700087645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_130
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 21
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 175f854c7d75bb870800000000000000
+      internalID: 8699643689419994481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_131
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 41
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27ece79b992bdef0800000000000000
+      internalID: -82426419930667222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_132
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 35
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7383520502f61d5d0800000000000000
+      internalID: -3039526088924121033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_133
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 12
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c10b37fa30660c0800000000000000
+      internalID: -4582971518707819385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_134
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 44
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf18e643cd484df0800000000000000
+      internalID: -195821082687037508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_135
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 21
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6976feb4f6b180ef0800000000000000
+      internalID: -141833223432869994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_136
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 41
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08021da80dd8710b0800000000000000
+      internalID: -5757977671748214656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_137
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 35
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37894d3113de8340800000000000000
+      internalID: 4868060318230218558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_138
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 12
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bcb2554295ee5760800000000000000
+      internalID: 7448643250108415154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_139
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55c1684e2420f3b00800000000000000
+      internalID: 810368944275070037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_140
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 0
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd22f769e1b54d230800000000000000
+      internalID: 3662652583891116764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_141
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 3
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d350787093f3dd720800000000000000
+      internalID: 2872521651504219453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_142
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 10
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e41c421316ee734e0800000000000000
+      internalID: -2001869408139165362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_143
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 0
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56bbc9aa5ac4db040800000000000000
+      internalID: 4664969063441415013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_144
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 0
+        width: 20
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1e2a28b268969f0800000000000000
+      internalID: -474700764277448262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_145
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 0
+        width: 26
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9265c2a331c559e20800000000000000
+      internalID: 3356690334924690985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_146
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 0
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0cab6e3382efdde0800000000000000
+      internalID: -1306076313598317557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_147
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 3
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869c71e3d16fc02f0800000000000000
+      internalID: -1005158011354232472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_148
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 10
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db15f0df6b42f180800000000000000
+      internalID: -9083114554833691692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_149
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 0
+        width: 22
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4294265574f16470800000000000000
+      internalID: 8386252765934162511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FarStars_150
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 0
+        width: 20
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71295d339e8eae50800000000000000
+      internalID: 6822547248553468283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FarStars_0: -3353718495594138438
+      FarStars_1: 8957567175051541700
+      FarStars_10: 8168358764564333411
+      FarStars_100: -7474804493885333086
+      FarStars_101: -6539415454679883415
+      FarStars_102: -2810220168656839150
+      FarStars_103: -8934052740373787768
+      FarStars_104: -760436216048279804
+      FarStars_105: 5030226791541672871
+      FarStars_106: -1251734971541765032
+      FarStars_107: 6777354138446351547
+      FarStars_108: 6794917739366397595
+      FarStars_109: 7549689018449303799
+      FarStars_11: 522463058775116952
+      FarStars_110: -3125301842106838556
+      FarStars_111: 4479724855982156579
+      FarStars_112: 2754825846087982689
+      FarStars_113: 250403721024703724
+      FarStars_114: 7316455047153903529
+      FarStars_115: -8115880708877512695
+      FarStars_116: 6102280094471379804
+      FarStars_117: 49428505091172058
+      FarStars_118: -6757525468069412033
+      FarStars_119: -2721511057210210610
+      FarStars_12: -4248496040892382265
+      FarStars_120: -3345937903266932090
+      FarStars_121: 41012252858700918
+      FarStars_122: 691737318650948810
+      FarStars_123: 1260550538839318470
+      FarStars_124: 1625271817071976696
+      FarStars_125: 4527302778582405324
+      FarStars_126: -2350576542716968246
+      FarStars_127: 421761539433727047
+      FarStars_128: 3096249447327460788
+      FarStars_129: 9210046800700087645
+      FarStars_13: 1861633045236876920
+      FarStars_130: 8699643689419994481
+      FarStars_131: -82426419930667222
+      FarStars_132: -3039526088924121033
+      FarStars_133: -4582971518707819385
+      FarStars_134: -195821082687037508
+      FarStars_135: -141833223432869994
+      FarStars_136: -5757977671748214656
+      FarStars_137: 4868060318230218558
+      FarStars_138: 7448643250108415154
+      FarStars_139: 810368944275070037
+      FarStars_14: 8413676301966888076
+      FarStars_140: 3662652583891116764
+      FarStars_141: 2872521651504219453
+      FarStars_142: -2001869408139165362
+      FarStars_143: 4664969063441415013
+      FarStars_144: -474700764277448262
+      FarStars_145: 3356690334924690985
+      FarStars_146: -1306076313598317557
+      FarStars_147: -1005158011354232472
+      FarStars_148: -9083114554833691692
+      FarStars_149: 8386252765934162511
+      FarStars_15: -6271330275667792121
+      FarStars_150: 6822547248553468283
+      FarStars_16: 8700136724343046661
+      FarStars_17: -5105976346186415881
+      FarStars_18: 3369412174958769437
+      FarStars_19: -4737052748599497566
+      FarStars_2: -5380586061244852142
+      FarStars_20: 432949986458165681
+      FarStars_21: -2050226715949479467
+      FarStars_22: 170107585991625097
+      FarStars_23: 8356089428051509348
+      FarStars_24: 8622713487656831298
+      FarStars_25: -2199231884895682113
+      FarStars_26: 8767236335628209954
+      FarStars_27: 3858528748412905525
+      FarStars_28: 7619826695692561609
+      FarStars_29: 9000201872582487838
+      FarStars_3: 4922442897162120071
+      FarStars_30: -6127551235486094761
+      FarStars_31: 6017716997716396743
+      FarStars_32: -1900016408991772983
+      FarStars_33: 4070678681773693120
+      FarStars_34: -4959017172156499786
+      FarStars_35: 5897743715173075693
+      FarStars_36: 7371553220551351268
+      FarStars_37: 12204489941143401
+      FarStars_38: -3435022192720497182
+      FarStars_39: -3232950557089105322
+      FarStars_4: 4294703619386314522
+      FarStars_40: -499474086629471447
+      FarStars_41: -4222607179957157275
+      FarStars_42: -7991492810984240074
+      FarStars_43: -6590651019255534882
+      FarStars_44: 5512320655832856357
+      FarStars_45: -4729065481037423804
+      FarStars_46: -1382462123789710295
+      FarStars_47: -3609709572543657365
+      FarStars_48: -3868681566039604931
+      FarStars_49: -1169272567227972668
+      FarStars_5: 7590607810551726446
+      FarStars_50: -1914336617263387991
+      FarStars_51: -1456674939557655593
+      FarStars_52: 5813611933378359671
+      FarStars_53: 8856339252574776949
+      FarStars_54: 8946975414549285491
+      FarStars_55: 85298963509017931
+      FarStars_56: 7335190739462935034
+      FarStars_57: 7748801779840108553
+      FarStars_58: 8824456261691582894
+      FarStars_59: -369932817162166436
+      FarStars_6: 619077024473912790
+      FarStars_60: -1026114382666087563
+      FarStars_61: -4840271407486135316
+      FarStars_62: 5486392191266726281
+      FarStars_63: 3909574009735317598
+      FarStars_64: -2038859988914705440
+      FarStars_65: -4665183879532610772
+      FarStars_66: -562743622262427710
+      FarStars_67: -8654642029322153641
+      FarStars_68: -5457988494668956762
+      FarStars_69: 339413414752274091
+      FarStars_7: 7193206319169957501
+      FarStars_70: 4681367633873721737
+      FarStars_71: -8138621610647435453
+      FarStars_72: -3323909533319592120
+      FarStars_73: 5552029839570432746
+      FarStars_74: -5802970117527310670
+      FarStars_75: -4547299444957965179
+      FarStars_76: 182285417048977587
+      FarStars_77: -6122676312081000436
+      FarStars_78: -8397690586984653467
+      FarStars_79: 1400634089931350644
+      FarStars_8: 124020254409480835
+      FarStars_80: 7001061097711046129
+      FarStars_81: -7547937443072297035
+      FarStars_82: 4202873710801814511
+      FarStars_83: -8276521247291994734
+      FarStars_84: 3185239636734723172
+      FarStars_85: -4253991609450713356
+      FarStars_86: -6205271108523397636
+      FarStars_87: -6103802223477733683
+      FarStars_88: 4937307841586892144
+      FarStars_89: 4488172312831357725
+      FarStars_9: -5494960065086154059
+      FarStars_90: 516501091787486921
+      FarStars_91: -1346775489821790355
+      FarStars_92: -1534559819811445903
+      FarStars_93: -6532190054639947525
+      FarStars_94: 7387820031438946565
+      FarStars_95: -1969725619499196645
+      FarStars_96: 3748782007005234678
+      FarStars_97: 2597022945370320763
+      FarStars_98: 8457682591480256282
+      FarStars_99: -110292060291064628
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

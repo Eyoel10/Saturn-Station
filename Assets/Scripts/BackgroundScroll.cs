@@ -4,25 +4,20 @@ using UnityEngine;
 
 public class BackgroundScroll : MonoBehaviour
 {
-    public float speed = 0.4f;
+    public float speed = 1.0f;
 
-    private float texAspectRatio;
-    private float xOffset = 0.0f, yOffset = 0.0f;
-    private Renderer render;
+    float xOffset = 0.0f, yOffset = 0.0f;
+    Renderer render;
 
     void Start()
     {
         render = GetComponent<Renderer>();
-        texAspectRatio = (float)render.material.mainTexture.width / render.material.mainTexture.height;
     }
 
-    void Update()
+    public void ScrollBy(Vector2 d)
     {
-        float dx = Mathf.Max(Input.GetAxisRaw("Horizontal"), 0);
-        float dy = Input.GetAxisRaw("Vertical");
-        Vector2 d = speed * Time.deltaTime * new Vector2(dx, dy).normalized;
-        xOffset = Mathf.Repeat(xOffset + d.x, 1.0f);
-        yOffset = Mathf.Repeat(yOffset + d.y * texAspectRatio, 1.0f);
+        xOffset = Mathf.Repeat(xOffset + (speed * d.x / render.bounds.size.x), 1.0f);
+        yOffset = Mathf.Repeat(yOffset + (speed * d.y / render.bounds.size.y), 1.0f);
         render.material.mainTextureOffset = new Vector2(xOffset, yOffset);
     }
 }
