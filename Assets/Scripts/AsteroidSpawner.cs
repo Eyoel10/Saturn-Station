@@ -35,22 +35,17 @@ public class AsteroidSpawner : MonoBehaviour
             if (asteroidScript.isReadyToSpawn)
                 StartCoroutine(EnterAsteroid(asteroid, asteroidScript));
     }
-
-    float TimeToNextAsteroid()
-    {
-        return Random.Range(minTimeToNextAsteroid, maxTimeToNextAsteroid);
-    }
     
     IEnumerator EnterAsteroid(GameObject asteroid, Asteroid asteroidScript)
     {
         asteroidScript.isReadyToSpawn = false;
 
-        yield return new WaitForSeconds(TimeToNextAsteroid());
+        yield return new WaitForSeconds(Random.Range(minTimeToNextAsteroid, maxTimeToNextAsteroid));
 
         asteroid.SetActive(true);
 
-        float y = Random.Range(-3 * screenSizeWorld.y, 3 * screenSizeWorld.y);
-        asteroid.transform.position = new Vector2(screenSizeWorld.x, y);
+        float y = Random.Range(-4.0f * screenSizeWorld.y, 4.0f * screenSizeWorld.y);
+        asteroid.transform.position = new Vector2(screenSizeWorld.x + 4.0f, y);
 
         asteroid.transform.localScale = Random.Range(minScale, maxScale) * new Vector3(1.0f, 1.0f, 1.0f);
 

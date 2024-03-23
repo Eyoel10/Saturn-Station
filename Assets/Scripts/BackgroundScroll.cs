@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BackgroundScroll : MonoBehaviour
 {
-    public float speed = 1.0f;
+    [SerializeField]
+    float speed = 1.0f;
 
     float xOffset = 0.0f, yOffset = 0.0f;
     Renderer render;

@@ -4,24 +4,30 @@ using UnityEngine;
 
 public class Ship : MonoBehaviour
 {
-    public float speed;
+    public bool isAutopilotEnabled;
+
+    [SerializeField]
+    float speed;
 
     BackgroundScroll bg, nearStars, farStars;
-    List<(GameObject, Asteroid)> asteroids;
+    MovingObject[] movingObjects;
 
     void Start()
     {
+        isAutopilotEnabled = false;
+
         bg = GameObject.Find("Background").GetComponent<BackgroundScroll>();
         nearStars = GameObject.Find("NearStars").GetComponent<BackgroundScroll>();
         farStars = GameObject.Find("FarStars").GetComponent<BackgroundScroll>();
-        asteroids = GameObject.Find("AsteroidSpawner").GetComponent<AsteroidSpawner>().asteroids;
+        movingObjects = FindObjectsByType<MovingObject>(FindObjectsInactive.Include, FindObjectsSortMode.None);
     }
 
     void Update()
     {
         float v = Input.GetAxis("Vertical");
-        float hRaw = Mathf.Max(Input.GetAxis("Horizontal"), 0.0f);
-        float vRaw = Input.GetAxis("Vertical");
+        float vRaw = Input.GetAxisRaw("Vertical");
+
+        float hRaw = isAutopilotEnabled ? 1.0f : Mathf.Max(Input.GetAxisRaw("Horizontal"), 0.0f);
 
         // Rotate ship.
         transform.rotation = Quaternion.Euler(0.0f, 0.0f, v * 45.0f);
@@ -32,8 +38,8 @@ public class Ship : MonoBehaviour
         nearStars.ScrollBy(bgTranslation);
         farStars.ScrollBy(bgTranslation);
 
-        // Move asteroids.
-        foreach ((GameObject asteroid, _) in asteroids)
-            asteroid.transform.Translate(-speed * Time.deltaTime * new Vector3(hRaw, vRaw).normalized, Space.World);
+        // Move objects in the opposite direction.
+        foreach (MovingObject obj in movingObjects)
+            obj.transform.Translate(-speed * Time.deltaTime * new Vector3(hRaw, vRaw).normalized, Space.World);
     }
 }

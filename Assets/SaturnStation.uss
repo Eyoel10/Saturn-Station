@@ -1,0 +1,11 @@
+Toggle > .unity-toggle__label {
+    flex-basis: auto;
+    width: auto;
+    min-width: 0;
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/Fonts/MarkerFelt.ttc?fileID=12800000&guid=1caf989e252e8488d986acdcf67da693&type=3#MarkerFelt");
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    letter-spacing: 0;
+    color: rgb(255, 255, 255);
+}
