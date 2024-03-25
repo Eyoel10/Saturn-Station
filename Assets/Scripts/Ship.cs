@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ship : MonoBehaviour
 {
     public bool isAutopilotEnabled;
+    public float score { get; private set; }
 
     [SerializeField]
     float speed;
@@ -15,6 +16,7 @@ public class Ship : MonoBehaviour
     void Start()
     {
         isAutopilotEnabled = false;
+        score = 0;
 
         bg = GameObject.Find("Background").GetComponent<BackgroundScroll>();
         nearStars = GameObject.Find("NearStars").GetComponent<BackgroundScroll>();
@@ -29,14 +31,17 @@ public class Ship : MonoBehaviour
 
         float hRaw = isAutopilotEnabled ? 1.0f : Mathf.Max(Input.GetAxisRaw("Horizontal"), 0.0f);
 
+        Vector2 d = speed * Time.deltaTime * new Vector2(hRaw, vRaw);
+
+        score += d.x * 10.0f;
+
         // Rotate ship.
         transform.rotation = Quaternion.Euler(0.0f, 0.0f, v * 45.0f);
 
         // Scroll backgrounds.
-        Vector2 bgTranslation = speed * Time.deltaTime * new Vector2(hRaw, vRaw);
-        bg.ScrollBy(bgTranslation);
-        nearStars.ScrollBy(bgTranslation);
-        farStars.ScrollBy(bgTranslation);
+        bg.ScrollBy(d);
+        nearStars.ScrollBy(d);
+        farStars.ScrollBy(d);
 
         // Move objects in the opposite direction.
         foreach (MovingObject obj in movingObjects)

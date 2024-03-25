@@ -8,6 +8,8 @@ public class SaturnStationUI : MonoBehaviour
     [SerializeField]
     Ship ship;
 
+    Label score;
+
     void OnEnable()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
@@ -17,5 +19,12 @@ public class SaturnStationUI : MonoBehaviour
         {
             ship.isAutopilotEnabled = ev.newValue;
         });
+
+        score = root.Q<Label>("score");
+    }
+
+    void Update()
+    {
+        score.text = $"SCORE: {ship.score:0} KM";
     }
 }

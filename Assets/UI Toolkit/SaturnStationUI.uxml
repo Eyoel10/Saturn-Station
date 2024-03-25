@@ -1,8 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/SaturnStation.uss?fileID=7433441132597879392&amp;guid=d9e894b77e8fb45309f305a0a89967f1&amp;type=3#SaturnStation" />
-    <ui:VisualElement name="body" style="flex-grow: 1; height: auto; width: auto; -unity-font-definition: url(&quot;project://database/Assets/TextMesh%20Pro/Fonts/LiberationSans.ttf?fileID=12800000&amp;guid=e3265ab4bf004d28a9537516768c1c75&amp;type=3#LiberationSans&quot;); -unity-font-style: normal; color: rgb(255, 255, 255);">
-        <ui:VisualElement name="toolbar" style="flex-grow: 0; flex-basis: initial; flex-direction: row;">
+    <ui:VisualElement name="body" style="flex-grow: 1; height: auto; width: auto; -unity-font-definition: url(&quot;project://database/Assets/Fonts/MarkerFelt.ttc?fileID=12800000&amp;guid=1caf989e252e8488d986acdcf67da693&amp;type=3#MarkerFelt&quot;); -unity-font-style: bold; color: rgb(255, 255, 255); -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0);">
+        <ui:VisualElement name="toolbar" style="flex-grow: 0; flex-basis: initial; flex-direction: row; justify-content: space-evenly;">
             <ui:Toggle label="AUTOPILOT" name="autopilot" style="flex-basis: auto; height: auto; width: auto;" />
+            <ui:Label text="SCORE: 0 KM" name="score" style="-unity-text-align: middle-center; flex-basis: 200px;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
