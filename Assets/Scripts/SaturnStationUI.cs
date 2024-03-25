@@ -9,6 +9,7 @@ public class SaturnStationUI : MonoBehaviour
     Ship ship;
 
     Label score;
+    VisualElement batteryBar, shieldBar;
 
     void OnEnable()
     {
@@ -21,10 +22,14 @@ public class SaturnStationUI : MonoBehaviour
         });
 
         score = root.Q<Label>("score");
+        batteryBar = root.Q("battery-bar");
+        shieldBar = root.Q("shield-bar");
     }
 
     void Update()
     {
-        score.text = $"SCORE: {ship.score:0} KM";
+        score.text = $"SCORE: {ship.Score:0} KM";
+        batteryBar.style.height = new Length(ship.Battery, LengthUnit.Percent);
+        shieldBar.style.height = new Length(ship.Shield, LengthUnit.Percent);
     }
 }

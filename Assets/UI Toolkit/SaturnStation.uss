@@ -1,0 +1,58 @@
+Toggle > .unity-toggle__label {
+    min-width: 0;
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/Fonts/MarkerFelt.ttc?fileID=12800000&guid=1caf989e252e8488d986acdcf67da693&type=3#MarkerFelt");
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+Toggle > .unity-toggle__input {
+    max-width: 24px;
+}
+
+.progress {
+    background-image: url("project://database/Assets/Textures/Saturn%20Station/UI/Non%20Interactables/Not%20Animated/VerticalSlider.png?fileID=2800000&guid=8a3153c33ddc742aeaf7e10f28391c5f&type=3#VerticalSlider");
+    width: 40px;
+    height: 148px;
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.progress > VisualElement {
+    flex-grow: 1;
+    background-color: rgba(103, 0, 0, 0.39);
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.progress > Label {
+    font-size: 12px;
+    -unity-text-align: upper-center;
+    position: absolute;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 100%;
+    top: 3px;
+    -unity-font-style: bold;
+}
+
+#battery-bar {
+    background-color: rgba(0, 255, 0, 0.39);
+    width: 100%;
+}
+
+#shield-bar {
+    background-color: rgba(0, 228, 255, 0.39);
+    width: 100%;
+}

@@ -5,7 +5,9 @@ using UnityEngine;
 public class Ship : MonoBehaviour
 {
     public bool isAutopilotEnabled;
-    public float score { get; private set; }
+    public float Score { get; private set; }
+    public float Battery { get; private set; }
+    public float Shield { get; private set; }
 
     [SerializeField]
     float speed;
@@ -16,7 +18,9 @@ public class Ship : MonoBehaviour
     void Start()
     {
         isAutopilotEnabled = false;
-        score = 0;
+        Score = 0.0f;
+        Battery = 100.0f;
+        Shield = 100.0f;
 
         bg = GameObject.Find("Background").GetComponent<BackgroundScroll>();
         nearStars = GameObject.Find("NearStars").GetComponent<BackgroundScroll>();
@@ -33,7 +37,7 @@ public class Ship : MonoBehaviour
 
         Vector2 d = speed * Time.deltaTime * new Vector2(hRaw, vRaw);
 
-        score += d.x * 10.0f;
+        Score += d.x * 10.0f;
 
         // Rotate ship.
         transform.rotation = Quaternion.Euler(0.0f, 0.0f, v * 45.0f);
@@ -46,5 +50,10 @@ public class Ship : MonoBehaviour
         // Move objects in the opposite direction.
         foreach (MovingObject obj in movingObjects)
             obj.transform.Translate(-speed * Time.deltaTime * new Vector3(hRaw, vRaw).normalized, Space.World);
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Shield -= 10.0f;
     }
 }

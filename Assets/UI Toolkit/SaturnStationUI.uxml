@@ -1,9 +1,27 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
-    <Style src="project://database/Assets/SaturnStation.uss?fileID=7433441132597879392&amp;guid=d9e894b77e8fb45309f305a0a89967f1&amp;type=3#SaturnStation" />
-    <ui:VisualElement name="body" style="flex-grow: 1; height: auto; width: auto; -unity-font-definition: url(&quot;project://database/Assets/Fonts/MarkerFelt.ttc?fileID=12800000&amp;guid=1caf989e252e8488d986acdcf67da693&amp;type=3#MarkerFelt&quot;); -unity-font-style: bold; color: rgb(255, 255, 255); -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0);">
-        <ui:VisualElement name="toolbar" style="flex-grow: 0; flex-basis: initial; flex-direction: row; justify-content: space-evenly;">
-            <ui:Toggle label="AUTOPILOT" name="autopilot" style="flex-basis: auto; height: auto; width: auto;" />
-            <ui:Label text="SCORE: 0 KM" name="score" style="-unity-text-align: middle-center; flex-basis: 200px;" />
+    <Style src="project://database/Assets/UI%20Toolkit/SaturnStation.uss?fileID=7433441132597879392&amp;guid=d9e894b77e8fb45309f305a0a89967f1&amp;type=3#SaturnStation" />
+    <ui:VisualElement name="body" style="flex-grow: 1; height: auto; width: auto; -unity-font-definition: url(&quot;project://database/Assets/Fonts/MarkerFelt.ttc?fileID=12800000&amp;guid=1caf989e252e8488d986acdcf67da693&amp;type=3#MarkerFelt&quot;); -unity-font-style: bold; color: rgb(255, 255, 255); -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0); flex-direction: row;">
+        <ui:VisualElement name="left" style="flex-grow: 1; flex-basis: auto;">
+            <ui:Toggle label="AUTOPILOT" name="autopilot" style="justify-content: center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="middle" style="flex-grow: 1;">
+            <ui:Label text="SCORE: 0 KM" name="score" style="-unity-text-align: upper-center;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="right" style="flex-grow: 1; min-width: auto; min-height: auto;">
+            <ui:VisualElement name="bars" style="flex-direction: row; justify-content: flex-end;">
+                <ui:VisualElement name="battery" class="progress">
+                    <ui:VisualElement>
+                        <ui:VisualElement name="battery-bar" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:Label text="BATTERY" />
+                </ui:VisualElement>
+                <ui:VisualElement name="shield" class="progress">
+                    <ui:VisualElement>
+                        <ui:VisualElement name="shield-bar" />
+                    </ui:VisualElement>
+                    <ui:Label text="SHIELD" />
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

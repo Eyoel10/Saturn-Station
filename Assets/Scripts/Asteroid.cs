@@ -18,7 +18,10 @@ public class Asteroid : MonoBehaviour
             ResetAsteroid();
     }
 
-    void OnTriggerEnter2D(Collider2D collision) => ResetAsteroid();
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        ResetAsteroid();
+    }
 
     void ResetAsteroid()
     {
