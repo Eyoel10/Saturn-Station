@@ -9,9 +9,7 @@ public class Ship : MonoBehaviour
     public float Battery { get; private set; }
     public float Shield { get; private set; }
 
-    [SerializeField]
-    float speed;
-
+    [SerializeField] float speed;
     BackgroundScroll bg, nearStars, farStars;
     MovingObject[] movingObjects;
 
