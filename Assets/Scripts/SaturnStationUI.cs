@@ -8,7 +8,7 @@ public class SaturnStationUI : MonoBehaviour
     [SerializeField]
     Ship ship;
 
-    Label score;
+    Label score, batteryNumber, shieldNumber;
     VisualElement batteryBar, shieldBar;
 
     void OnEnable()
@@ -22,6 +22,8 @@ public class SaturnStationUI : MonoBehaviour
         });
 
         score = root.Q<Label>("score");
+        batteryNumber = root.Q<Label>("battery-number");
+        shieldNumber = root.Q<Label>("shield-number");
         batteryBar = root.Q("battery-bar");
         shieldBar = root.Q("shield-bar");
     }
@@ -30,6 +32,8 @@ public class SaturnStationUI : MonoBehaviour
     {
         score.text = $"SCORE: {ship.Score:0} KM";
         batteryBar.style.height = new Length(ship.Battery, LengthUnit.Percent);
+        batteryNumber.text = $"{ship.Battery:0}%";
         shieldBar.style.height = new Length(ship.Shield, LengthUnit.Percent);
+        shieldNumber.text = $"{ship.Shield:0}%";
     }
 }

@@ -32,12 +32,12 @@ public class Ship : MonoBehaviour
     {
         float v = Input.GetAxis("Vertical");
         float vRaw = Input.GetAxisRaw("Vertical");
-
         float hRaw = isAutopilotEnabled ? 1.0f : Mathf.Max(Input.GetAxisRaw("Horizontal"), 0.0f);
 
-        Vector2 d = speed * Time.deltaTime * new Vector2(hRaw, vRaw);
+        Vector2 d = speed * Time.deltaTime * new Vector2(hRaw, vRaw).normalized;
 
         Score += d.x * 10.0f;
+        Battery -= Time.deltaTime * 0.5f;
 
         // Rotate ship.
         transform.rotation = Quaternion.Euler(0.0f, 0.0f, v * 45.0f);
@@ -49,7 +49,7 @@ public class Ship : MonoBehaviour
 
         // Move objects in the opposite direction.
         foreach (MovingObject obj in movingObjects)
-            obj.transform.Translate(-speed * Time.deltaTime * new Vector3(hRaw, vRaw).normalized, Space.World);
+            obj.transform.Translate(-d, Space.World);
     }
 
     void OnCollisionEnter2D(Collision2D collision)

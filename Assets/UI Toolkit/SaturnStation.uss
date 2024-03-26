@@ -21,7 +21,6 @@ Toggle > .unity-toggle__input {
 
 .progress > VisualElement {
     flex-grow: 1;
-    background-color: rgba(103, 0, 0, 0.39);
     margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -30,7 +29,7 @@ Toggle > .unity-toggle__input {
     align-items: flex-end;
 }
 
-.progress > Label {
+.progress-label {
     font-size: 12px;
     -unity-text-align: upper-center;
     position: absolute;
@@ -47,6 +46,23 @@ Toggle > .unity-toggle__input {
     -unity-font-style: bold;
 }
 
+.progress-number {
+    font-size: 12px;
+    -unity-text-align: upper-center;
+    position: absolute;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 100%;
+    top: 68px;
+    -unity-font-style: bold;
+}
+
 #battery-bar {
     background-color: rgba(0, 255, 0, 0.39);
     width: 100%;
@@ -55,4 +71,12 @@ Toggle > .unity-toggle__input {
 #shield-bar {
     background-color: rgba(0, 228, 255, 0.39);
     width: 100%;
+}
+
+#battery > VisualElement {
+    background-color: rgba(103, 0, 0, 0.39);
+}
+
+#shield > VisualElement {
+    background-color: rgba(103, 103, 103, 0.39);
 }

@@ -13,13 +13,15 @@
                     <ui:VisualElement>
                         <ui:VisualElement name="battery-bar" style="flex-grow: 1;" />
                     </ui:VisualElement>
-                    <ui:Label text="BATTERY" />
+                    <ui:Label text="BATTERY" class="progress-label" />
+                    <ui:Label text="0%" name="battery-number" class="progress-number" />
                 </ui:VisualElement>
                 <ui:VisualElement name="shield" class="progress">
                     <ui:VisualElement>
                         <ui:VisualElement name="shield-bar" />
                     </ui:VisualElement>
-                    <ui:Label text="SHIELD" />
+                    <ui:Label text="SHIELD" class="progress-label" />
+                    <ui:Label text="0%" name="shield-number" class="progress-number" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>

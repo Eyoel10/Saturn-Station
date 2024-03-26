@@ -20,7 +20,8 @@ public class Asteroid : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        ResetAsteroid();
+        if (collision.gameObject.name == "Ship")
+            ResetAsteroid();
     }
 
     void ResetAsteroid()
