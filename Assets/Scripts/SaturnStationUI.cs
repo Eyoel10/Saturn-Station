@@ -21,6 +21,36 @@ public class SaturnStationUI : MonoBehaviour
             ship.isAutopilotEnabled = ev.newValue;
         });
 
+        VisualElement controlsUp = root.Q("controls-up");
+        controlsUp.RegisterCallback<MouseDownEvent>(ev =>
+        {
+            ship.isUpHeld = true;
+        });
+        controlsUp.RegisterCallback<MouseUpEvent>(ev =>
+        {
+            ship.isUpHeld = false;
+        });
+
+        VisualElement controlsDown = root.Q("controls-down");
+        controlsDown.RegisterCallback<MouseDownEvent>(ev =>
+        {
+            ship.isDownHeld = true;
+        });
+        controlsDown.RegisterCallback<MouseUpEvent>(ev =>
+        {
+            ship.isDownHeld = false;
+        });
+
+        VisualElement controlsRight = root.Q("controls-right");
+        controlsRight.RegisterCallback<MouseDownEvent>(ev =>
+        {
+            ship.isRightHeld = true;
+        });
+        controlsRight.RegisterCallback<MouseUpEvent>(ev =>
+        {
+            ship.isRightHeld = false;
+        });
+
         score = root.Q<Label>("score");
         batteryNumber = root.Q<Label>("battery-number");
         shieldNumber = root.Q<Label>("shield-number");

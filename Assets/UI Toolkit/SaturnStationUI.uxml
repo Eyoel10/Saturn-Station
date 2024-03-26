@@ -25,5 +25,10 @@
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
+        <ui:VisualElement name="controls" class="controls" style="bottom: 10px; left: -10px;">
+            <ui:VisualElement name="controls-up" class="controls-button" style="top: 2px; left: 31px;" />
+            <ui:VisualElement name="controls-down" class="controls-button" style="top: auto; left: 31px; bottom: 2px;" />
+            <ui:VisualElement name="controls-right" class="controls-button" style="top: auto; left: 60px; bottom: 31px;" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
