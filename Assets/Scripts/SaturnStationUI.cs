@@ -15,14 +15,21 @@ public class SaturnStationUI : MonoBehaviour
     VisualElement batteryBar, shieldBar;
 
     Label numerator, denominator;
+    Label message;
     TextField answerField;
     Button submit;
+    Label dialogBatteryNumber;
+    VisualElement dialogBatteryBar;
 
     public void OpenQuestionDialog(int numeratorValue, int denominatorValue)
     {
         numerator.text = numeratorValue.ToString();
         denominator.text = denominatorValue.ToString();
+        message.text = "Type your answer:";
         answerField.value = "";
+
+        answerField.style.unityBackgroundImageTintColor = new(new Color(0.5f, 0.5f, 0.5f));
+        UpdateBar(dialogBatteryBar, dialogBatteryNumber, ship.Battery);
 
         hud.style.visibility = Visibility.Hidden;
         questionDialog.style.visibility = Visibility.Visible;
@@ -30,10 +37,33 @@ public class SaturnStationUI : MonoBehaviour
         answerField.Focus();
     }
 
-    public void CloseQuestionDialog()
+    public IEnumerator CorrectAnswer(decimal answer)
     {
+        message.text = "Correct!";
+        answerField.style.unityBackgroundImageTintColor = new(new Color(0.0f, 1.0f, 0.0f));
+        submit.style.visibility = Visibility.Hidden;
+
+        int percentage = (int)(answer * 100);
+        for (int i = 0; i < 100; ++i)
+        {
+            if (i < percentage)
+            {
+                ship.Battery = Mathf.Clamp(ship.Battery + 1.0f, 0.0f, 100.0f);
+                UpdateBar(dialogBatteryBar, dialogBatteryNumber, ship.Battery);
+            }
+            yield return new WaitForSecondsRealtime(0.03f);
+        }
+
+        Time.timeScale = 1.0f;
         hud.style.visibility = Visibility.Visible;
         questionDialog.style.visibility = Visibility.Hidden;
+        submit.style.visibility = StyleKeyword.Null;
+    }
+
+    public void IncorrectAnswer()
+    {
+        message.text = "Try again:";
+        answerField.style.unityBackgroundImageTintColor = new(new Color(1.0f, 0.0f, 0.0f));
     }
 
     void Awake()
@@ -90,6 +120,7 @@ public class SaturnStationUI : MonoBehaviour
         batteryBar = root.Q("battery-bar");
         shieldBar = root.Q("shield-bar");
 
+        message = root.Q<Label>("message");
         numerator = root.Q<Label>("numerator");
         denominator = root.Q<Label>("denominator");
 
@@ -101,20 +132,28 @@ public class SaturnStationUI : MonoBehaviour
         });
 
         submit = root.Q<Button>("submit");
-        submit.clicked += () =>
-        {
-            if (decimal.TryParse(answerField.value, out decimal answer))
-                questionDialogScript.SubmitAnswer(answer);
-            
-        };
+        submit.clicked += SubmitAnswer;
+
+        dialogBatteryNumber = root.Q<Label>("dialog-battery-number");
+        dialogBatteryBar = root.Q("dialog-battery-bar");
     }
 
     void Update()
     {
         score.text = $"SCORE: {ship.Score:0} KM";
-        batteryBar.style.height = new Length(ship.Battery, LengthUnit.Percent);
-        batteryNumber.text = $"{ship.Battery:0}%";
-        shieldBar.style.height = new Length(ship.Shield, LengthUnit.Percent);
-        shieldNumber.text = $"{ship.Shield:0}%";
+        UpdateBar(batteryBar, batteryNumber, ship.Battery);
+        UpdateBar(shieldBar, shieldNumber, ship.Shield);
+    }
+
+    void UpdateBar(VisualElement bar, Label number, float value)
+    {
+        bar.style.height = new Length(value, LengthUnit.Percent);
+        number.text = $"{value:0}%";
+    }
+
+    void SubmitAnswer()
+    {
+        if (decimal.TryParse(answerField.value, out decimal answer))
+            questionDialogScript.SubmitAnswer(answer);
     }
 }

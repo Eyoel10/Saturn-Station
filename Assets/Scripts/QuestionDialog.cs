@@ -11,7 +11,7 @@ public class QuestionDialog : MonoBehaviour
     public void OpenQuestionDialog()
     {
         Time.timeScale = 0.0f;
-        numerator = Random.Range(0, denominator + 1);
+        numerator = Random.Range(1, denominator + 1);
         ui.OpenQuestionDialog(numerator, denominator);
     }
 
@@ -19,14 +19,13 @@ public class QuestionDialog : MonoBehaviour
     {
         if (answer == (decimal)numerator / denominator)
         {
-            ui.CloseQuestionDialog();
+            StartCoroutine(ui.CorrectAnswer(answer));
             if (denominator < 10000)
                 denominator *= 10;
-            Time.timeScale = 1.0f;
         }
         else
         {
-            print("incorrect");
+            ui.IncorrectAnswer();
         }
     }
 

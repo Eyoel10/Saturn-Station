@@ -63,7 +63,7 @@ Toggle > .unity-toggle__input {
     -unity-font-style: bold;
 }
 
-#battery-bar {
+.battery-bar {
     background-color: rgba(0, 255, 0, 0.39);
     width: 100%;
 }
@@ -73,7 +73,7 @@ Toggle > .unity-toggle__input {
     width: 100%;
 }
 
-#battery > VisualElement {
+.battery > VisualElement {
     background-color: rgba(103, 0, 0, 0.39);
 }
 

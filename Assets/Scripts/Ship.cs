@@ -6,11 +6,12 @@ public class Ship : MonoBehaviour
 {
     public bool isAutopilotEnabled;
     public float Score { get; private set; }
-    public float Battery { get; private set; }
+    public float Battery { get; set; }
     public float Shield { get; private set; }
     public bool isUpHeld, isDownHeld, isRightHeld;
 
     [SerializeField] float speed;
+    [SerializeField] float batteryDrainRate;
     float vertical;
     BackgroundScroll bg, nearStars, farStars;
     MovingObject[] movingObjects;
@@ -56,7 +57,7 @@ public class Ship : MonoBehaviour
         Vector2 d = speed * Time.deltaTime * new Vector2(hRaw, vRaw).normalized;
 
         Score += d.x * 10.0f;
-        Battery -= Time.deltaTime * 0.5f;
+        Battery -= Time.deltaTime * batteryDrainRate;
 
         // Rotate ship.
         transform.rotation = Quaternion.Euler(0.0f, 0.0f, vertical * 45.0f);

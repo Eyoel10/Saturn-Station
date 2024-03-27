@@ -182,7 +182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ship: {fileID: 1867647797}
-  questionDialogScript: {fileID: 0}
 --- !u!114 &145369714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -649,6 +648,7 @@ MonoBehaviour:
   isDownHeld: 0
   isRightHeld: 0
   speed: 15
+  batteryDrainRate: 1
 --- !u!70 &1867647798
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
