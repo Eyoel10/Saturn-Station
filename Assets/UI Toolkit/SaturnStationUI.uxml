@@ -1,34 +1,59 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI%20Toolkit/SaturnStation.uss?fileID=7433441132597879392&amp;guid=d9e894b77e8fb45309f305a0a89967f1&amp;type=3#SaturnStation" />
-    <ui:VisualElement name="body" style="flex-grow: 1; height: auto; width: auto; -unity-font-definition: url(&quot;project://database/Assets/Fonts/MarkerFelt.ttc?fileID=12800000&amp;guid=1caf989e252e8488d986acdcf67da693&amp;type=3#MarkerFelt&quot;); -unity-font-style: bold; color: rgb(255, 255, 255); -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0); flex-direction: row;">
-        <ui:VisualElement name="left" style="flex-grow: 1; flex-basis: auto;">
-            <ui:Toggle label="AUTOPILOT" name="autopilot" style="justify-content: center;" />
-        </ui:VisualElement>
-        <ui:VisualElement name="middle" style="flex-grow: 1;">
-            <ui:Label text="SCORE: 0 KM" name="score" style="-unity-text-align: upper-center;" />
-        </ui:VisualElement>
-        <ui:VisualElement name="right" style="flex-grow: 1; min-width: auto; min-height: auto;">
-            <ui:VisualElement name="bars" style="flex-direction: row; justify-content: flex-end;">
-                <ui:VisualElement name="battery" class="progress">
-                    <ui:VisualElement>
-                        <ui:VisualElement name="battery-bar" style="flex-grow: 1;" />
+    <ui:VisualElement name="body" style="flex-grow: 1; height: auto; width: auto; -unity-font-definition: url(&quot;project://database/Assets/Fonts/MarkerFelt.ttc?fileID=12800000&amp;guid=1caf989e252e8488d986acdcf67da693&amp;type=3#MarkerFelt&quot;); -unity-font-style: bold; color: rgb(255, 255, 255); -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0); flex-direction: row; -unity-text-align: upper-center;">
+        <ui:VisualElement name="hud" style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement name="left" style="flex-grow: 1; flex-basis: auto;">
+                <ui:Toggle label="AUTOPILOT" name="autopilot" style="justify-content: center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="middle" style="flex-grow: 1;">
+                <ui:Label text="SCORE: 0 KM" name="score" style="-unity-text-align: upper-center;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="right" style="flex-grow: 1; min-width: auto; min-height: auto;">
+                <ui:VisualElement name="bars" style="flex-direction: row; justify-content: flex-end;">
+                    <ui:VisualElement name="battery" class="progress">
+                        <ui:VisualElement>
+                            <ui:VisualElement name="battery-bar" style="flex-grow: 1;" />
+                        </ui:VisualElement>
+                        <ui:Label text="BATTERY" class="progress-label" />
+                        <ui:Label text="0%" name="battery-number" class="progress-number" />
                     </ui:VisualElement>
-                    <ui:Label text="BATTERY" class="progress-label" />
-                    <ui:Label text="0%" name="battery-number" class="progress-number" />
-                </ui:VisualElement>
-                <ui:VisualElement name="shield" class="progress">
-                    <ui:VisualElement>
-                        <ui:VisualElement name="shield-bar" />
+                    <ui:VisualElement name="shield" class="progress">
+                        <ui:VisualElement>
+                            <ui:VisualElement name="shield-bar" />
+                        </ui:VisualElement>
+                        <ui:Label text="SHIELD" class="progress-label" />
+                        <ui:Label text="0%" name="shield-number" class="progress-number" />
                     </ui:VisualElement>
-                    <ui:Label text="SHIELD" class="progress-label" />
-                    <ui:Label text="0%" name="shield-number" class="progress-number" />
                 </ui:VisualElement>
             </ui:VisualElement>
+            <ui:VisualElement name="controls" class="controls" style="bottom: 10px; left: -10px;">
+                <ui:VisualElement name="controls-up" class="controls-button" style="top: 2px; left: 31px;" />
+                <ui:VisualElement name="controls-down" class="controls-button" style="top: auto; left: 31px; bottom: 2px;" />
+                <ui:VisualElement name="controls-right" class="controls-button" style="top: auto; left: 60px; bottom: 31px;" />
+            </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="controls" class="controls" style="bottom: 10px; left: -10px;">
-            <ui:VisualElement name="controls-up" class="controls-button" style="top: 2px; left: 31px;" />
-            <ui:VisualElement name="controls-down" class="controls-button" style="top: auto; left: 31px; bottom: 2px;" />
-            <ui:VisualElement name="controls-right" class="controls-button" style="top: auto; left: 60px; bottom: 31px;" />
+        <ui:VisualElement name="question-dialog" style="position: absolute; width: 100%; height: 100%; padding-top: 30px; padding-right: 80px; padding-bottom: 30px; padding-left: 80px; align-items: center; top: 0; left: 0; font-size: 18px; background-color: rgba(0, 0, 0, 0.67); visibility: hidden;">
+            <ui:VisualElement class="textbox" style="font-size: 16px;">
+                <ui:Label text="Convert the fraction to a decimal." />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:VisualElement class="textbox label-textbox">
+                    <ui:Label text="Recharge battery by:" />
+                </ui:VisualElement>
+                <ui:VisualElement class="fraction" style="-unity-background-image-tint-color: rgb(0, 255, 0);">
+                    <ui:Label text="1" name="numerator" />
+                    <ui:Label text="10" name="denominator" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-direction: row;">
+                <ui:Label text="Type your answer:" class="label-textbox" style="padding-right: 0; -unity-text-outline-width: 2px;" />
+                <ui:VisualElement style="flex-grow: 1;">
+                    <ui:TextField placeholder-text="0" name="answer-field" max-length="7" keyboard-type="NumbersAndPunctuation" class="decimal" />
+                    <ui:Button text="Submit" name="submit" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: rgba(0, 0, 0, 0); margin-top: 2px; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 84px; -unity-text-align: middle-right; justify-content: center; align-self: flex-start;">
+                        <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Textures/Saturn%20Station/UI/Interactables/Buttons/Play.png?fileID=2800000&amp;guid=873fba5d4f6474a97b81ceda41540e46&amp;type=3#Play&quot;); width: 30px; height: 30px;" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

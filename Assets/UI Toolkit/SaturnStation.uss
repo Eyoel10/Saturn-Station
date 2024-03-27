@@ -108,3 +108,84 @@ Toggle > .unity-toggle__input {
     height: 28px;
     position: absolute;
 }
+
+.textbox {
+    background-image: url("project://database/Assets/Textures/Saturn%20Station/UI/Non%20Interactables/Not%20Animated/TopScore.png?fileID=2800000&guid=cf17146aa725842a4be3eab84f8600b3&type=3#TopScore");
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 6px;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.textbox > Label {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+}
+
+.fraction {
+    background-image: url("project://database/Assets/Textures/Saturn%20Station/UI/Non%20Interactables/Not%20Animated/Fraction.png?fileID=2800000&guid=f67cb1fd006454e9ba9fa6f3b81373f7&type=3#Fraction");
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 3px;
+    margin-left: 0;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+.fraction > Label {
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.label-textbox {
+    padding-right: 10px;
+}
+
+.decimal {
+    background-image: url("project://database/Assets/Textures/Saturn%20Station/UI/Non%20Interactables/Not%20Animated/Decimal.png?fileID=2800000&guid=10c73423953ee4bcb8b48175be363f41&type=3#Decimal");
+    margin-bottom: 0;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    padding-right: 16px;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 110px;
+}
+
+.decimal > * {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    background-color: rgba(0, 0, 0, 0);
+}

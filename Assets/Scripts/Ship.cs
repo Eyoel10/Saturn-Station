@@ -8,7 +8,6 @@ public class Ship : MonoBehaviour
     public float Score { get; private set; }
     public float Battery { get; private set; }
     public float Shield { get; private set; }
-
     public bool isUpHeld, isDownHeld, isRightHeld;
 
     [SerializeField] float speed;
