@@ -16,6 +16,8 @@ public class Ship : MonoBehaviour
     BackgroundScroll bg, nearStars, farStars;
     MovingObject[] movingObjects;
 
+    QuestionDialog questionDialog;
+
     void Start()
     {
         isAutopilotEnabled = false;
@@ -29,6 +31,8 @@ public class Ship : MonoBehaviour
         nearStars = GameObject.Find("NearStars").GetComponent<BackgroundScroll>();
         farStars = GameObject.Find("FarStars").GetComponent<BackgroundScroll>();
         movingObjects = FindObjectsByType<MovingObject>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+
+        questionDialog = FindFirstObjectByType<QuestionDialog>();
     }
 
     void Update()
@@ -75,5 +79,15 @@ public class Ship : MonoBehaviour
     void OnCollisionEnter2D(Collision2D collision)
     {
         Shield -= 10.0f;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        BatteryPack battery = collision.gameObject.GetComponent<BatteryPack>();
+        if (battery != null)
+        {
+            battery.gameObject.SetActive(false);
+            questionDialog.OpenQuestionDialog();
+        }
     }
 }

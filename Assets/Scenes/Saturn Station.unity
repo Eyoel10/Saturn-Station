@@ -204,8 +204,9 @@ GameObject:
   m_Component:
   - component: {fileID: 212282537}
   - component: {fileID: 212282536}
+  - component: {fileID: 212282538}
   m_Layer: 0
-  m_Name: AsteroidSpawner
+  m_Name: Spawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -223,9 +224,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b70ce337a3a84714925200405238cce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroidCount: 10
-  minTimeToNextAsteroid: 0.5
-  maxTimeToNextAsteroid: 3
+  prefab: {fileID: 3566224467989813508, guid: e106a992c07b24760afae4ceaa888c1d, type: 3}
+  instanceCount: 10
+  minTimeToSpawn: 0.5
+  maxTimeToSpawn: 3
   minScale: 1
   maxScale: 3
   minSpeed: 1
@@ -234,7 +236,6 @@ MonoBehaviour:
   maxAngularVelocity: 30
   minHeadingAngle: -45
   maxHeadingAngle: 45
-  asteroidPrefab: {fileID: -8073305420930056684, guid: e106a992c07b24760afae4ceaa888c1d, type: 3}
 --- !u!4 &212282537
 Transform:
   m_ObjectHideFlags: 0
@@ -250,6 +251,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &212282538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212282535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b39f59622c1444b6ca101dc5dc7fda95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1624889964260915471, guid: daef7232504504c37b46fb9338493b9d, type: 3}
+  instanceCount: 3
+  minTimeToSpawn: 5
+  maxTimeToSpawn: 10
 --- !u!1 &476455719
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +665,7 @@ MonoBehaviour:
   isDownHeld: 0
   isRightHeld: 0
   speed: 15
-  batteryDrainRate: 1
+  batteryDrainRate: 2
 --- !u!70 &1867647798
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
