@@ -12,7 +12,7 @@ public class LevelUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(LevelUP(1));
+        StartCoroutine(ChangeLevel(1));
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class LevelUp : MonoBehaviour
         
     }
 
-    public IEnumerator LevelUP(int level)
+    public IEnumerator ChangeLevel(int level)
     {
         levelUpText.text = "Level " + level;
         levelUp.SetActive(true);

@@ -22,6 +22,7 @@ public class BubbleScore : MonoBehaviour
     public TMP_Text LevelUI;
     public GameObject background;
     public LevelUp lvlUp;
+    public StablizeBalls spawner;
     // Start is called before the first frame update
     void Start()
     {
@@ -74,10 +75,24 @@ public class BubbleScore : MonoBehaviour
             level += 1;
             UpdateUI(LevelUI, level);
             background.transform.DOMove(background.transform.position + Vector3.down * 2, 1);
-            StartCoroutine(lvlUp.LevelUP(level));
+            StartCoroutine(lvlUp.ChangeLevel(level));
         }
     }
 
+    public void DecreaseLevel(int amount)
+    {
+        level -= amount;
+        UpdateUI(LevelUI, level);
+        background.transform.DOMove(background.transform.position + Vector3.up * 2 * amount, 1);
+        StartCoroutine(lvlUp.ChangeLevel(level));
+        SetNewLevel();
+    }
+
+    public void SetNewLevel()
+    {
+        spawner.ClearBalls();
+        StartCoroutine(spawner.MakeFirstBubbles(0.2f, 0, 0, 10));
+    }
     public void UpdateScore()
     {
         if (timer < 50 && timer >= 0)
