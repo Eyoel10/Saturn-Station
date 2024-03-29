@@ -3,48 +3,49 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class QuestionDialog : MonoBehaviour
+public abstract class QuestionDialog : MonoBehaviour
 {
+    [SerializeField] string dialogElementName;
     [SerializeField] Ship ship;
     [SerializeField] SaturnStationUI ui;
 
-    VisualElement dialog;
-    Label numerator;
+    protected VisualElement dialog;
+    protected VisualElement fraction;
     Label denominator;
     Label message;
-    TextField answerField;
+    protected VisualElement answerBox;
+    protected TextField answerField;
     Button submit;
     ProgressBar battery;
 
     int maxDenominatorPow = 1;
-    int numeratorValue, denominatorValue;
+    protected int denominatorValue;
 
-    void Start()
+    protected virtual void Start()
     {
-        dialog = ui.Root.Q("question-dialog");
-        VisualElement fraction = dialog.Q(className: "fraction");
-        numerator = fraction.Query<Label>().AtIndex(0);
-        denominator = fraction.Query<Label>().AtIndex(1);
+        dialog = ui.Root.Q(dialogElementName);
+
+        fraction = dialog.Q(className: "fraction");
+        denominator = fraction.Query<Label>().Last();
+
         message = dialog.Q<Label>(className: "message");
-        answerField = dialog.Q<TextField>(className: "decimal");
         submit = dialog.Q<Button>(className: "submit");
         submit.clicked += SubmitAnswer;
+
         battery = new ProgressBar(dialog.Q(className: "battery"), () => ship.Battery);
     }
 
-    public void Open()
+    public virtual void Open()
     {
         Time.timeScale = 0.0f;
 
         denominatorValue = (int)Mathf.Pow(10.0f, Random.Range(1, maxDenominatorPow + 1));
-        numeratorValue = Random.Range(1, denominatorValue + 1);
-
-        numerator.text = numeratorValue.ToString();
         denominator.text = denominatorValue.ToString();
+
         message.text = "Type your answer:";
         answerField.value = "";
+        answerBox.style.unityBackgroundImageTintColor = new(new Color(0.5f, 0.5f, 0.5f));
 
-        answerField.style.unityBackgroundImageTintColor = new(new Color(0.5f, 0.5f, 0.5f));
         battery.UpdateValue();
 
         ui.SetHudVisbility(false);
@@ -53,35 +54,33 @@ public class QuestionDialog : MonoBehaviour
         answerField.Focus();
     }
 
+    protected abstract bool CheckAnswer(out int percentage);
+
     public void SubmitAnswer()
     {
-        if (!decimal.TryParse(answerField.value, out decimal answer))
-            return;
-
-        if (answer == (decimal)numeratorValue / denominatorValue)
+        if (CheckAnswer(out int percentage))
         {
-            StartCoroutine(CorrectAnswer(answer));
+            StartCoroutine(CorrectAnswer(percentage));
         }
         else
         {
             message.text = "Try again:";
-            answerField.style.unityBackgroundImageTintColor = new(new Color(1.0f, 0.0f, 0.0f));
+            answerBox.style.unityBackgroundImageTintColor = new(new Color(1.0f, 0.0f, 0.0f));
         }
     }
 
-    IEnumerator CorrectAnswer(decimal answer)
+    IEnumerator CorrectAnswer(int batteryChargePercent)
     {
         if (maxDenominatorPow < 3)
             maxDenominatorPow += 1;
 
         message.text = "Correct!";
-        answerField.style.unityBackgroundImageTintColor = new(new Color(0.0f, 1.0f, 0.0f));
+        answerBox.style.unityBackgroundImageTintColor = new(new Color(0.0f, 1.0f, 0.0f));
         submit.style.visibility = Visibility.Hidden;
 
-        int percentage = (int)(answer * 100);
         for (int i = 0; i < 100; ++i)
         {
-            if (i < percentage)
+            if (i < batteryChargePercent)
             {
                 ship.Battery = Mathf.Clamp(ship.Battery + 1.0f, 0.0f, 100.0f);
                 battery.UpdateValue();
@@ -93,5 +92,7 @@ public class QuestionDialog : MonoBehaviour
         ui.SetHudVisbility(true);
         dialog.style.visibility = Visibility.Hidden;
         submit.style.visibility = StyleKeyword.Null;
+
+        ship.ActivateShieldBubble(false);
     }
 }

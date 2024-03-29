@@ -76,7 +76,7 @@
                         <ui:VisualElement class="textbox label-textbox">
                             <ui:Label text="Recharge battery by:" />
                         </ui:VisualElement>
-                        <ui:Label text="0.1" class="decimal bg-green" style="-unity-text-align: middle-center; width: auto; min-width: 80px;" />
+                        <ui:Label text="0.1" class="decimal bg-green" style="-unity-text-align: middle-center; width: auto; min-width: 80px; padding-right: 24px;" />
                     </ui:VisualElement>
                     <ui:VisualElement class="answer">
                         <ui:Label text="Type your answer:" class="label-textbox message" />

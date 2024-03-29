@@ -17,7 +17,56 @@ public class Ship : MonoBehaviour
     BackgroundScroll bg, nearStars, farStars;
     MovingObject[] movingObjects;
 
+    SpriteRenderer shieldBubble;
+    IEnumerator shieldBubbleCoroutine;
+
     QuestionDialog questionDialog;
+
+    float EaseOut(float t)
+    {
+        float s = 1 - t;
+        return 3 * t * s * s + 3 * t * t * s + t * t * t;
+    }
+
+    public void ActivateShieldBubble(bool doTransition = true)
+    {
+        if (shieldBubbleCoroutine != null)
+            StopCoroutine(shieldBubbleCoroutine);
+        shieldBubbleCoroutine = CoActivateShieldBubble(doTransition);
+        StartCoroutine(shieldBubbleCoroutine);
+    }
+
+    public IEnumerator CoActivateShieldBubble(bool doTransition)
+    {
+        shieldBubble.gameObject.SetActive(true);
+        shieldBubble.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+        shieldBubble.transform.localScale = new(2.0f, 2.0f, 1.0f);
+
+        if (doTransition)
+        {
+            Vector3 startScale = new();
+            Vector3 endScale = new(2.0f, 2.0f, 1.0f);
+            float progress = 0.0f;
+            while (progress < 1.0f)
+            {
+                shieldBubble.transform.localScale = Vector3.Lerp(startScale, endScale, EaseOut(progress));
+                progress += Time.deltaTime * 4.0f;
+                yield return null;
+            }
+        }
+
+        yield return new WaitForSeconds(2.0f);
+
+        for (int i = 0; i < 4; ++i)
+        {
+            yield return new WaitForSeconds(0.15f);
+            shieldBubble.color = new Color(1.0f, 1.0f, 1.0f, 0.2f);
+            yield return new WaitForSeconds(0.15f);
+            shieldBubble.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+        }
+
+        shieldBubble.gameObject.SetActive(false);
+    }
 
     void Start()
     {
@@ -32,8 +81,11 @@ public class Ship : MonoBehaviour
         nearStars = GameObject.Find("NearStars").GetComponent<BackgroundScroll>();
         farStars = GameObject.Find("FarStars").GetComponent<BackgroundScroll>();
         movingObjects = FindObjectsByType<MovingObject>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        shieldBubble = GameObject.Find("Shield").GetComponent<SpriteRenderer>();
+        shieldBubble.gameObject.SetActive(false);
 
-        questionDialog = FindFirstObjectByType<QuestionDialog>();
+        questionDialog = FindFirstObjectByType<QuestionDialogToDecimal>();
+        //questionDialog = FindFirstObjectByType<QuestionDialogToFraction>();
     }
 
     void Update()
@@ -79,7 +131,11 @@ public class Ship : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Shield -= 10.0f;
+        if (!shieldBubble.gameObject.activeInHierarchy)
+        {
+            Shield -= 10.0f;
+            ActivateShieldBubble();
+        }
     }
 
     void OnTriggerEnter2D(Collider2D collision)
