@@ -1,0 +1,278 @@
+Toggle > .unity-toggle__label {
+    min-width: 0;
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/Fonts/MarkerFelt.ttc?fileID=12800000&guid=1caf989e252e8488d986acdcf67da693&type=3#MarkerFelt");
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+Toggle > .unity-toggle__input {
+    max-width: 24px;
+}
+
+.progress {
+    background-image: url("project://database/Assets/Textures/Saturn%20Station/UI/Non%20Interactables/Not%20Animated/VerticalSlider.png?fileID=2800000&guid=8a3153c33ddc742aeaf7e10f28391c5f&type=3#VerticalSlider");
+    width: 40px;
+    height: 148px;
+}
+
+.progress > VisualElement {
+    flex-grow: 1;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.progress-label {
+    font-size: 12px;
+    -unity-text-align: upper-center;
+    position: absolute;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 100%;
+    top: 3px;
+    -unity-font-style: bold;
+}
+
+.progress-number {
+    font-size: 12px;
+    -unity-text-align: upper-center;
+    position: absolute;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 100%;
+    top: 68px;
+    -unity-font-style: bold;
+}
+
+.battery-bar {
+    background-color: rgba(0, 255, 0, 0.39);
+    width: 100%;
+}
+
+.shield-bar {
+    background-color: rgba(0, 228, 255, 0.39);
+    width: 100%;
+}
+
+.battery > VisualElement {
+    background-color: rgba(103, 0, 0, 0.39);
+}
+
+.shield > VisualElement {
+    background-color: rgba(103, 103, 103, 0.39);
+}
+
+.controls {
+    position: absolute;
+    width: 90px;
+    height: 91px;
+    bottom: 10px;
+    left: -10px;
+    background-image: url("project://database/Assets/Textures/Saturn%20Station/Controls/Red_Controls.png?fileID=2800000&guid=6826e4f71553e4d04851591ae80b92a3&type=3#Red_Controls");
+}
+
+.controls-button {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    width: 29px;
+    height: 28px;
+    position: absolute;
+}
+
+.textbox {
+    background-image: url("project://database/Assets/Textures/Saturn%20Station/UI/Non%20Interactables/Not%20Animated/TopScore.png?fileID=2800000&guid=cf17146aa725842a4be3eab84f8600b3&type=3#TopScore");
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 6px;
+    margin-left: 0;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+.textbox > Label {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    flex-grow: 1;
+    -unity-text-align: middle-left;
+}
+
+.fraction {
+    background-image: url("project://database/Assets/Textures/Saturn%20Station/UI/Non%20Interactables/Not%20Animated/Fraction.png?fileID=2800000&guid=f67cb1fd006454e9ba9fa6f3b81373f7&type=3#Fraction");
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 3px;
+    margin-left: 0;
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+}
+
+.fraction > * {
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.fraction > * > * {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    -unity-text-align: upper-center;
+}
+
+.label-textbox {
+    padding-right: 10px;
+}
+
+.decimal {
+    background-image: url("project://database/Assets/Textures/Saturn%20Station/UI/Non%20Interactables/Not%20Animated/Decimal.png?fileID=2800000&guid=10c73423953ee4bcb8b48175be363f41&type=3#Decimal");
+    margin-bottom: 0;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    padding-right: 16px;
+    padding-left: 10px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    width: 110px;
+    -unity-text-align: middle-left;
+}
+
+.decimal > * {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.dialog {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.67);
+    visibility: visible;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dialog > VisualElement > VisualElement {
+    align-items: center;
+}
+
+.dialog .battery {
+    margin-left: 8px;
+}
+
+.question {
+    font-size: 16px;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.answer {
+    flex-direction: row;
+    width: 295px;
+    justify-content: flex-end;
+}
+
+.message {
+    padding-right: 0;
+    -unity-text-outline-width: 2px;
+}
+
+.bg-gray {
+    -unity-background-image-tint-color: rgb(128, 128, 128);
+}
+
+.bg-green {
+    -unity-background-image-tint-color: rgb(0, 255, 0);
+}
+
+.submit {
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    width: 84px;
+    -unity-text-align: middle-right;
+}
+
+.submit > VisualElement {
+    background-image: url("project://database/Assets/Textures/Saturn%20Station/UI/Interactables/Buttons/Play.png?fileID=2800000&guid=873fba5d4f6474a97b81ceda41540e46&type=3#Play");
+    width: 30px;
+    height: 30px;
+}
