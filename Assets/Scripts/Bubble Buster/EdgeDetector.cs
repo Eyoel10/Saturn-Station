@@ -10,6 +10,7 @@ public class EdgeDetector : MonoBehaviour
     public int counter;
     Color[] borderColor = new Color[2];
     public SpriteRenderer redBorder;
+    
     // Start is called before the first frame update
     void Start()
     {

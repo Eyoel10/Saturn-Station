@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    public BubbleScore scorer;
     // Start is called before the first frame update
     void Start()
     {
-
+        scorer = GameObject.Find("Scorer").GetComponent<BubbleScore>();
     }
 
     // Update is called once per frame
@@ -22,7 +23,19 @@ public class GameOver : MonoBehaviour
     {
         if (other.CompareTag("Edge"))
         {
-            SceneManager.LoadScene("Bubble Buster");
+            if (scorer.level > 3)
+            {
+                scorer.DecreaseLevel(3);
+            }
+            else if (scorer.level > 1)
+            {
+                scorer.DecreaseLevel(scorer.level - 1);
+            }
+            else
+            {
+                scorer.DecreaseLevel(0);
+            }
+            //SceneManager.LoadScene("Bubble Buster");
         }
     }
 }

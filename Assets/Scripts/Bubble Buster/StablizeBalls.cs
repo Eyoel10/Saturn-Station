@@ -4,11 +4,14 @@ using System.Collections.Generic;
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class StablizeBalls : MonoBehaviour
 {
     public float spawnTimer;
-    public float ballMoveSpeed;
+    //public float ballMoveSpeed;
+    public float originalSpawnSpeed;
+    public Slider spawnSpeedMultiplier;
     public GameObject[] ballsObj;
     public string[] ballsColor;
     // The Spawn point of the balls
@@ -63,6 +66,7 @@ public class StablizeBalls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        spawnTimer = originalSpawnSpeed / spawnSpeedMultiplier.value;
         if (firstBubblesPlaced && !isLevelingUp)
         {
             // Moves around the bubbles into their appropriate position
@@ -256,7 +260,7 @@ public class StablizeBalls : MonoBehaviour
     }
 
     // Makes a new ball from the randomly generated numbers and initializes it with all the appropriate values
-    void MakeNewBall(int randomBall, int randomSpawnPoint, int i, int randomPlacementPoint)
+    public void MakeNewBall(int randomBall, int randomSpawnPoint, int i, int randomPlacementPoint)
     {
         GameObject ball = Instantiate(ballsObj[randomBall]);
         ball.transform.position = spawnPoints[randomSpawnPoint].position;
@@ -279,6 +283,17 @@ public class StablizeBalls : MonoBehaviour
         //RemoveAt(ref availableSpots, indexToRemove);
     }
 
+    public void ClearBalls()
+    {
+        for (int i = 0; i < balls.GetLength(0); i++)
+        {
+            for (int j = 0; j < balls.GetLength(1); j++)
+            {
+                Destroy(balls[i, j]);
+                balls[i, j] = null;
+            }
+        }
+    }
     void UpdateBallPos()
     {
         // Update the position of all the balls in the scene
@@ -322,7 +337,7 @@ public class StablizeBalls : MonoBehaviour
     }
 
     // Counts down from a duration on a thread outside the main thread and does a function after depending on the given duration time
-    IEnumerator MakeFirstBubbles(float duration, int level, int placementPoint, int count)
+    public IEnumerator MakeFirstBubbles(float duration, int level, int placementPoint, int count)
     {
         yield return new WaitForSeconds(duration);
 
