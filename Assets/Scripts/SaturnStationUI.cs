@@ -3,85 +3,53 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+public class ProgressBar
+{
+    Label number;
+    VisualElement bar;
+    System.Func<float> getValue;
+
+    public ProgressBar(VisualElement element, System.Func<float> getValue)
+    {
+        number = element.Q<Label>(className: "progress-number");
+        bar = element.Q(className: "progress-bar");
+        this.getValue = getValue;
+    }
+
+    public void UpdateValue()
+    {
+        float newValue = getValue();
+        bar.style.height = new Length(newValue, LengthUnit.Percent);
+        number.text = $"{newValue:0}%";
+    }
+}
+
 public class SaturnStationUI : MonoBehaviour
 {
+    public VisualElement Root { get; private set; }
+
     [SerializeField] Ship ship;
 
-    QuestionDialog questionDialogScript;
+    VisualElement hud;
+    Label score;
+    ProgressBar battery, shield;
 
-    VisualElement hud, questionDialog;
-
-    Label score, batteryNumber, shieldNumber;
-    VisualElement batteryBar, shieldBar;
-
-    Label numerator, denominator;
-    Label message;
-    TextField answerField;
-    Button submit;
-    Label dialogBatteryNumber;
-    VisualElement dialogBatteryBar;
-
-    public void OpenQuestionDialog(int numeratorValue, int denominatorValue)
+    public void SetHudVisbility(bool isVisible)
     {
-        numerator.text = numeratorValue.ToString();
-        denominator.text = denominatorValue.ToString();
-        message.text = "Type your answer:";
-        answerField.value = "";
-
-        answerField.style.unityBackgroundImageTintColor = new(new Color(0.5f, 0.5f, 0.5f));
-        UpdateBar(dialogBatteryBar, dialogBatteryNumber, ship.Battery);
-
-        hud.style.visibility = Visibility.Hidden;
-        questionDialog.style.visibility = Visibility.Visible;
-
-        answerField.Focus();
-    }
-
-    public IEnumerator CorrectAnswer(decimal answer)
-    {
-        message.text = "Correct!";
-        answerField.style.unityBackgroundImageTintColor = new(new Color(0.0f, 1.0f, 0.0f));
-        submit.style.visibility = Visibility.Hidden;
-
-        int percentage = (int)(answer * 100);
-        for (int i = 0; i < 100; ++i)
-        {
-            if (i < percentage)
-            {
-                ship.Battery = Mathf.Clamp(ship.Battery + 1.0f, 0.0f, 100.0f);
-                UpdateBar(dialogBatteryBar, dialogBatteryNumber, ship.Battery);
-            }
-            yield return new WaitForSecondsRealtime(0.03f);
-        }
-
-        Time.timeScale = 1.0f;
-        hud.style.visibility = Visibility.Visible;
-        questionDialog.style.visibility = Visibility.Hidden;
-        submit.style.visibility = StyleKeyword.Null;
-    }
-
-    public void IncorrectAnswer()
-    {
-        message.text = "Try again:";
-        answerField.style.unityBackgroundImageTintColor = new(new Color(1.0f, 0.0f, 0.0f));
+        hud.style.visibility = isVisible ? Visibility.Visible : Visibility.Hidden;
     }
 
     void Awake()
     {
-        questionDialogScript = GetComponent<QuestionDialog>();
-    }
+        Root = GetComponent<UIDocument>().rootVisualElement;
 
-    void OnEnable()
-    {
-        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
-
-        Toggle autopilot = root.Q<Toggle>("autopilot");
+        Toggle autopilot = Root.Q<Toggle>("autopilot");
         autopilot.RegisterValueChangedCallback(ev =>
         {
             ship.isAutopilotEnabled = ev.newValue;
         });
 
-        VisualElement controlsUp = root.Q("controls-up");
+        VisualElement controlsUp = Root.Q("controls-up");
         controlsUp.RegisterCallback<MouseDownEvent>(ev =>
         {
             ship.isUpHeld = true;
@@ -91,7 +59,7 @@ public class SaturnStationUI : MonoBehaviour
             ship.isUpHeld = false;
         });
 
-        VisualElement controlsDown = root.Q("controls-down");
+        VisualElement controlsDown = Root.Q("controls-down");
         controlsDown.RegisterCallback<MouseDownEvent>(ev =>
         {
             ship.isDownHeld = true;
@@ -101,7 +69,7 @@ public class SaturnStationUI : MonoBehaviour
             ship.isDownHeld = false;
         });
 
-        VisualElement controlsRight = root.Q("controls-right");
+        VisualElement controlsRight = Root.Q("controls-right");
         controlsRight.RegisterCallback<MouseDownEvent>(ev =>
         {
             ship.isRightHeld = true;
@@ -111,49 +79,18 @@ public class SaturnStationUI : MonoBehaviour
             ship.isRightHeld = false;
         });
 
-        hud = root.Q("hud");
-        questionDialog = root.Q("question-dialog");
+        hud = Root.Q("hud");
 
-        score = root.Q<Label>("score");
-        batteryNumber = root.Q<Label>("battery-number");
-        shieldNumber = root.Q<Label>("shield-number");
-        batteryBar = root.Q("battery-bar");
-        shieldBar = root.Q("shield-bar");
+        score = Root.Q<Label>("score");
 
-        message = root.Q<Label>("message");
-        numerator = root.Q<Label>("numerator");
-        denominator = root.Q<Label>("denominator");
-
-        answerField = root.Q<TextField>("answer-field");
-        answerField.RegisterValueChangedCallback(ev =>
-        {
-            if (!decimal.TryParse(ev.newValue, out decimal answer))
-                answerField.value = "";
-        });
-
-        submit = root.Q<Button>("submit");
-        submit.clicked += SubmitAnswer;
-
-        dialogBatteryNumber = root.Q<Label>("dialog-battery-number");
-        dialogBatteryBar = root.Q("dialog-battery-bar");
+        battery = new ProgressBar(Root.Q("battery"), () => ship.Battery);
+        shield = new ProgressBar(Root.Q("shield"), () => ship.Shield);
     }
 
     void Update()
     {
         score.text = $"SCORE: {ship.Score:0} KM";
-        UpdateBar(batteryBar, batteryNumber, ship.Battery);
-        UpdateBar(shieldBar, shieldNumber, ship.Shield);
-    }
-
-    void UpdateBar(VisualElement bar, Label number, float value)
-    {
-        bar.style.height = new Length(value, LengthUnit.Percent);
-        number.text = $"{value:0}%";
-    }
-
-    void SubmitAnswer()
-    {
-        if (decimal.TryParse(answerField.value, out decimal answer))
-            questionDialogScript.SubmitAnswer(answer);
+        battery.UpdateValue();
+        shield.UpdateValue();
     }
 }

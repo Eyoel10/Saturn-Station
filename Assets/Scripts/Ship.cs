@@ -12,6 +12,7 @@ public class Ship : MonoBehaviour
 
     [SerializeField] float speed;
     [SerializeField] float batteryDrainRate;
+
     float vertical;
     BackgroundScroll bg, nearStars, farStars;
     MovingObject[] movingObjects;
@@ -87,7 +88,7 @@ public class Ship : MonoBehaviour
         if (battery != null)
         {
             battery.gameObject.SetActive(false);
-            questionDialog.OpenQuestionDialog();
+            questionDialog.Open();
         }
     }
 }

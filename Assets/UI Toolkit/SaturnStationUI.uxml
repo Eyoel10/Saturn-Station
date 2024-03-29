@@ -10,19 +10,19 @@
             </ui:VisualElement>
             <ui:VisualElement name="right" style="flex-grow: 1; min-width: auto; min-height: auto;">
                 <ui:VisualElement name="bars" style="flex-direction: row; justify-content: flex-end;">
-                    <ui:VisualElement name="battery" class="progress battery">
+                    <ui:VisualElement name="battery" class="progress battery" style="margin-right: 4px;">
                         <ui:VisualElement>
-                            <ui:VisualElement name="battery-bar" class="battery-bar" style="flex-grow: 1;" />
+                            <ui:VisualElement class="battery-bar progress-bar" />
                         </ui:VisualElement>
                         <ui:Label text="BATTERY" class="progress-label" />
-                        <ui:Label text="0%" name="battery-number" class="progress-number" />
+                        <ui:Label text="0%" class="progress-number" />
                     </ui:VisualElement>
-                    <ui:VisualElement name="shield" class="progress">
+                    <ui:VisualElement name="shield" class="progress shield">
                         <ui:VisualElement>
-                            <ui:VisualElement name="shield-bar" />
+                            <ui:VisualElement class="shield-bar progress-bar" />
                         </ui:VisualElement>
                         <ui:Label text="SHIELD" class="progress-label" />
-                        <ui:Label text="0%" name="shield-number" class="progress-number" />
+                        <ui:Label text="0%" class="progress-number" />
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
@@ -32,36 +32,72 @@
                 <ui:VisualElement name="controls-right" class="controls-button" style="top: auto; left: 60px; bottom: 31px;" />
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="question-dialog" style="position: absolute; width: 100%; height: 100%; padding-top: 30px; padding-right: 80px; padding-bottom: 30px; padding-left: 80px; align-items: flex-start; top: 0; left: 0; font-size: 18px; background-color: rgba(0, 0, 0, 0.67); visibility: hidden; flex-direction: row; justify-content: center;">
-            <ui:VisualElement style="align-items: center;">
-                <ui:VisualElement class="textbox" style="font-size: 16px;">
-                    <ui:Label text="Convert the fraction to a decimal." />
-                </ui:VisualElement>
-                <ui:VisualElement style="flex-direction: row;">
-                    <ui:VisualElement class="textbox label-textbox">
-                        <ui:Label text="Recharge battery by:" />
+        <ui:VisualElement name="question-dialog-to-decimal" class="dialog" style="visibility: hidden;">
+            <ui:VisualElement class="flex-row">
+                <ui:VisualElement>
+                    <ui:VisualElement class="textbox question">
+                        <ui:Label text="Convert the fraction to a decimal." />
                     </ui:VisualElement>
-                    <ui:VisualElement class="fraction" style="-unity-background-image-tint-color: rgb(0, 255, 0);">
-                        <ui:Label text="1" name="numerator" />
-                        <ui:Label text="10" name="denominator" />
+                    <ui:VisualElement class="flex-row">
+                        <ui:VisualElement class="textbox label-textbox">
+                            <ui:Label text="Recharge battery by:" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="fraction bg-green">
+                            <ui:Label text="1" />
+                            <ui:Label text="10" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="answer">
+                        <ui:Label text="Type your answer:" class="label-textbox message" />
+                        <ui:VisualElement>
+                            <ui:TextField placeholder-text="0" max-length="7" keyboard-type="NumbersAndPunctuation" class="decimal bg-gray" />
+                            <ui:Button text="Submit" class="submit">
+                                <ui:VisualElement />
+                            </ui:Button>
+                        </ui:VisualElement>
                     </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement style="flex-direction: row; width: 295px; justify-content: flex-end;">
-                    <ui:Label text="Type your answer:" name="message" class="label-textbox" style="padding-right: 0; -unity-text-outline-width: 2px;" />
+                <ui:VisualElement class="progress battery">
                     <ui:VisualElement>
-                        <ui:TextField placeholder-text="0" name="answer-field" max-length="7" keyboard-type="NumbersAndPunctuation" class="decimal" style="-unity-background-image-tint-color: rgb(128, 128, 128);" />
-                        <ui:Button text="Submit" name="submit" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: rgba(0, 0, 0, 0); margin-top: 2px; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 84px; -unity-text-align: middle-right; justify-content: center;">
-                            <ui:VisualElement style="background-image: url(&quot;project://database/Assets/Textures/Saturn%20Station/UI/Interactables/Buttons/Play.png?fileID=2800000&amp;guid=873fba5d4f6474a97b81ceda41540e46&amp;type=3#Play&quot;); width: 30px; height: 30px;" />
-                        </ui:Button>
+                        <ui:VisualElement class="battery-bar progress-bar" style="flex-grow: 1;" />
                     </ui:VisualElement>
+                    <ui:Label text="BATTERY" class="progress-label" />
+                    <ui:Label text="0%" class="progress-number" />
                 </ui:VisualElement>
             </ui:VisualElement>
-            <ui:VisualElement name="dialog-battery" class="progress battery" style="margin-left: 8px;">
+        </ui:VisualElement>
+        <ui:VisualElement name="question-dialog-to-fraction" class="dialog" style="visibility: hidden; top: 0; left: 0;">
+            <ui:VisualElement class="flex-row">
                 <ui:VisualElement>
-                    <ui:VisualElement name="dialog-battery-bar" class="battery-bar" style="flex-grow: 1;" />
+                    <ui:VisualElement class="textbox question">
+                        <ui:Label text="Convert the decimal to a fraction." />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="flex-row">
+                        <ui:VisualElement class="textbox label-textbox">
+                            <ui:Label text="Recharge battery by:" />
+                        </ui:VisualElement>
+                        <ui:Label text="0.1" class="decimal bg-green" style="-unity-text-align: middle-center; width: auto; min-width: 80px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="answer">
+                        <ui:Label text="Type your answer:" class="label-textbox message" />
+                        <ui:VisualElement>
+                            <ui:VisualElement class="fraction bg-gray" style="flex-grow: 1;">
+                                <ui:TextField placeholder-text="0" max-length="5" keyboard-type="NumbersAndPunctuation" />
+                                <ui:Label text="10" emoji-fallback-support="false" />
+                            </ui:VisualElement>
+                            <ui:Button text="Submit" class="submit">
+                                <ui:VisualElement />
+                            </ui:Button>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:Label text="BATTERY" class="progress-label" />
-                <ui:Label text="0%" name="dialog-battery-number" class="progress-number" />
+                <ui:VisualElement class="progress battery">
+                    <ui:VisualElement>
+                        <ui:VisualElement class="battery-bar progress-bar" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:Label text="BATTERY" class="progress-label" />
+                    <ui:Label text="0%" class="progress-number" />
+                </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>
