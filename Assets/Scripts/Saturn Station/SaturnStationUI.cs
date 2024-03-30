@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class ProgressBar
 {
@@ -92,5 +93,13 @@ public class SaturnStationUI : MonoBehaviour
         score.text = $"SCORE: {ship.Score:0} KM";
         battery.UpdateValue();
         shield.UpdateValue();
+        if (ship.Battery <= 0)
+        {
+            SceneManager.LoadScene(0);
+        }
+        if (ship.Shield <= 0)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
