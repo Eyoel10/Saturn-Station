@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 using DG.Tweening;
 
@@ -70,9 +71,13 @@ public class BubbleScore : MonoBehaviour
     {
         pair += 1;
         pairUI.text = pair.ToString();
-        if (pair % 6 == 0)
+        if (pair % 3 == 0)
         {
             level += 1;
+            if (level > 6)
+            {
+                SceneManager.LoadScene("Saturn Station");
+            }
             UpdateUI(LevelUI, level);
             background.transform.DOMove(background.transform.position + Vector3.down * 2, 1);
             StartCoroutine(lvlUp.ChangeLevel(level));

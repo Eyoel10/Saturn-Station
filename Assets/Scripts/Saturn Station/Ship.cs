@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class Ship : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class Ship : MonoBehaviour
     public float Battery { get; set; }
     public float Shield { get; private set; }
     public bool isUpHeld, isDownHeld, isRightHeld;
+    public LevelLoader levelLoader;
 
     [SerializeField] float speed;
     [SerializeField] float batteryDrainRate;
@@ -28,6 +31,17 @@ public class Ship : MonoBehaviour
         return 3 * t * s * s + 3 * t * t * s + t * t * t;
     }
 
+    public void LoadShipandControls()
+    {
+
+        SelectedShipData shipData = Resources.LoadAll<SelectedShipData>("Saturn Station")[0];
+        if (shipData.shipSprite != null)
+        {
+            GetComponent<SpriteRenderer>().sprite = shipData.shipSprite;
+            VisualElement controls = FindFirstObjectByType<SaturnStationUI>().Root.Q("controls");
+            controls.style.backgroundImage = new StyleBackground(shipData.controlSprite);
+        }
+    }
     public void ActivateShieldBubble(bool doTransition = true)
     {
         if (shieldBubbleCoroutine != null)
@@ -86,6 +100,8 @@ public class Ship : MonoBehaviour
 
         questionDialog = FindFirstObjectByType<QuestionDialogToDecimal>();
         //questionDialog = FindFirstObjectByType<QuestionDialogToFraction>();
+
+        LoadShipandControls();
     }
 
     void Update()
@@ -133,8 +149,12 @@ public class Ship : MonoBehaviour
     {
         if (!shieldBubble.gameObject.activeInHierarchy)
         {
-            Shield -= 10.0f;
+            Shield -= 20.0f;
             ActivateShieldBubble();
+            if (Shield <= 0.0f)
+            {
+                SceneManager.LoadScene("Bubble Buster");
+            }
         }
     }
 
@@ -144,7 +164,14 @@ public class Ship : MonoBehaviour
         if (battery != null)
         {
             battery.gameObject.SetActive(false);
-            questionDialog.Open();
+            if (collision.gameObject.tag == "Battery")
+            {
+                questionDialog.Open();
+            }
+            else if(collision.gameObject.tag == "Shield")
+            {
+                levelLoader.LoadNextLevel();
+            }
         }
     }
 }
