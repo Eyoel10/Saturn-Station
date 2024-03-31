@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 145369713}
   - component: {fileID: 145369715}
   - component: {fileID: 145369714}
+  - component: {fileID: 145369716}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -213,6 +214,22 @@ MonoBehaviour:
   dialogElementName: question-dialog-to-decimal
   ship: {fileID: 1867647797}
   ui: {fileID: 145369713}
+--- !u!114 &145369716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145369710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0492d0275efa844f7951a1b2efde6a04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ship: {fileID: 1867647797}
+  spawner: {fileID: 212282535}
+  asteroidPrefab: {fileID: -8073305420930056684, guid: e106a992c07b24760afae4ceaa888c1d, type: 3}
+  batteryPrefab: {fileID: 7805968496769809936, guid: daef7232504504c37b46fb9338493b9d, type: 3}
 --- !u!1 &212282535
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,6 +265,7 @@ MonoBehaviour:
   instanceCount: 10
   minTimeToSpawn: 0.5
   maxTimeToSpawn: 3
+  screenSizeWorld: {x: 0, y: 0}
   minScale: 1
   maxScale: 3
   minSpeed: 1
@@ -287,6 +305,7 @@ MonoBehaviour:
   instanceCount: 3
   minTimeToSpawn: 3
   maxTimeToSpawn: 8
+  screenSizeWorld: {x: 0, y: 0}
 --- !u!114 &212282539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,6 +322,7 @@ MonoBehaviour:
   instanceCount: 3
   minTimeToSpawn: 3
   maxTimeToSpawn: 8
+  screenSizeWorld: {x: 0, y: 0}
 --- !u!1 &476455719
 GameObject:
   m_ObjectHideFlags: 0

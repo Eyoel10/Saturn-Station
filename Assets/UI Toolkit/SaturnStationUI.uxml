@@ -2,6 +2,9 @@
     <Style src="project://database/Assets/UI%20Toolkit/SaturnStation.uss?fileID=7433441132597879392&amp;guid=d9e894b77e8fb45309f305a0a89967f1&amp;type=3#SaturnStation" />
     <ui:VisualElement name="body" style="flex-grow: 1; height: auto; width: auto; -unity-font-definition: url(&quot;project://database/Assets/Fonts/MarkerFelt.ttc?fileID=12800000&amp;guid=1caf989e252e8488d986acdcf67da693&amp;type=3#MarkerFelt&quot;); -unity-font-style: bold; color: rgb(255, 255, 255); -unity-text-outline-width: 1px; -unity-text-outline-color: rgb(0, 0, 0); flex-direction: row; -unity-text-align: upper-center;">
         <ui:VisualElement name="hud" style="flex-grow: 1; flex-direction: row;">
+            <ui:VisualElement style="position: absolute; width: 100%; height: 50%; justify-content: center; align-items: center; visibility: visible;">
+                <ui:Label text="Label" name="popup" class="textbox" style="visibility: hidden; font-size: 13px;" />
+            </ui:VisualElement>
             <ui:VisualElement name="left" style="flex-grow: 1; flex-basis: auto;">
                 <ui:Toggle label="AUTOPILOT" name="autopilot" style="justify-content: center;" />
             </ui:VisualElement>
@@ -26,12 +29,11 @@
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
-            <ui:VisualElement name="controls" class="controls" style="bottom: 10px; left: -10px;">
-                <ui:VisualElement name="controls-up" class="controls-button" style="top: 2px; left: 31px;" />
-                <ui:VisualElement name="controls-down" class="controls-button" style="top: auto; left: 31px; bottom: 2px;" />
-                <ui:VisualElement name="controls-right" class="controls-button" style="top: auto; left: 60px; bottom: 31px;" />
+            <ui:VisualElement name="controls" class="controls">
+                <ui:VisualElement name="controls-up" class="controls-button" style="top: 2px; left: 3px;" />
+                <ui:VisualElement name="controls-down" class="controls-button" style="top: auto; left: 3px; bottom: 2px;" />
+                <ui:VisualElement name="controls-right" class="controls-button" style="top: auto; left: 31px; bottom: 31px;" />
             </ui:VisualElement>
-            <ui:Label text="Label" name="popup" class="textbox" style="position: absolute; visibility: hidden;" />
         </ui:VisualElement>
         <ui:VisualElement name="question-dialog-to-decimal" class="dialog" style="visibility: hidden;">
             <ui:VisualElement class="flex-row">

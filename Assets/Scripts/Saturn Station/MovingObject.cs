@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class MovingObject : MonoBehaviour
 {
-
+    void Start()
+    {
+        FindFirstObjectByType<Ship>().movingObjects.Add(this);
+    }
 }
