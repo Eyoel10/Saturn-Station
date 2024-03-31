@@ -9,6 +9,7 @@ public class Ship : MonoBehaviour
     public bool isAutopilotEnabled;
     public float Score { get; private set; }
     public float Battery { get; set; }
+    public bool doDrainBattery = true;
     public float Shield { get; private set; }
     public bool isUpHeld, isDownHeld, isRightHeld;
     public LevelLoader levelLoader;
@@ -18,7 +19,7 @@ public class Ship : MonoBehaviour
 
     float vertical;
     BackgroundScroll bg, nearStars, farStars;
-    MovingObject[] movingObjects;
+    public List<MovingObject> movingObjects;
 
     SpriteRenderer shieldBubble;
     IEnumerator shieldBubbleCoroutine;
@@ -95,7 +96,7 @@ public class Ship : MonoBehaviour
         bg = GameObject.Find("Background").GetComponent<BackgroundScroll>();
         nearStars = GameObject.Find("NearStars").GetComponent<BackgroundScroll>();
         farStars = GameObject.Find("FarStars").GetComponent<BackgroundScroll>();
-        movingObjects = FindObjectsByType<MovingObject>(FindObjectsInactive.Include, FindObjectsSortMode.None);
+        movingObjects = new(FindObjectsByType<MovingObject>(FindObjectsInactive.Include, FindObjectsSortMode.None));
         shieldBubble = GameObject.Find("Shield").GetComponent<SpriteRenderer>();
         shieldBubble.gameObject.SetActive(false);
 
@@ -132,7 +133,8 @@ public class Ship : MonoBehaviour
         Vector2 d = speed * Time.deltaTime * new Vector2(hRaw, vRaw).normalized;
 
         Score += d.x * 10.0f;
-        Battery -= Time.deltaTime * batteryDrainRate;
+        if (doDrainBattery)
+            Battery -= Time.deltaTime * batteryDrainRate;
         if (Battery <= 0.0f)
             ui.GameOver();
 

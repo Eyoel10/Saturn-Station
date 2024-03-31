@@ -81,11 +81,12 @@ Toggle > .unity-toggle__input {
 
 .controls {
     position: absolute;
-    width: 90px;
-    height: 91px;
+    width: 62px;
+    height: 90px;
     bottom: 10px;
-    left: -10px;
+    left: 20px;
     background-image: url("project://database/Assets/Textures/Saturn%20Station/Controls/Red_Controls.png?fileID=2800000&guid=6826e4f71553e4d04851591ae80b92a3&type=3#Red_Controls");
+    -unity-background-scale-mode: stretch-to-fill;
 }
 
 .controls-button {
@@ -102,7 +103,7 @@ Toggle > .unity-toggle__input {
     border-bottom-width: 0;
     border-left-width: 0;
     background-color: rgba(0, 0, 0, 0);
-    width: 29px;
+    width: 30px;
     height: 28px;
     position: absolute;
 }
@@ -275,4 +276,31 @@ Toggle > .unity-toggle__input {
     background-image: url("project://database/Assets/Textures/Saturn%20Station/UI/Interactables/Buttons/Play.png?fileID=2800000&guid=873fba5d4f6474a97b81ceda41540e46&type=3#Play");
     width: 30px;
     height: 30px;
+}
+
+.flash {
+    border-left-color: rgba(255, 255, 0, 0.38);
+    border-right-color: rgba(255, 255, 0, 0.38);
+    border-top-color: rgba(255, 255, 0, 0.38);
+    border-bottom-color: rgba(255, 255, 0, 0.38);
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    overflow: visible;
+}
+
+.progress.flash > VisualElement {
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+.progress.flash .progress-label {
+    margin-top: -2px;
+}
+
+.progress.flash .progress-number {
+    margin-top: -2px;
 }
