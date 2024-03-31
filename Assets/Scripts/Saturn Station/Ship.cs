@@ -132,6 +132,10 @@ public class Ship : MonoBehaviour
         Vector2 d = speed * Time.deltaTime * new Vector2(hRaw, vRaw).normalized;
 
         Score += d.x * 10.0f;
+        if (PlayerPrefs.GetInt("HighScore") < Score)
+        {
+            PlayerPrefs.SetInt("HighScore", (int)Mathf.Floor(Score));
+        }
         Battery -= Time.deltaTime * batteryDrainRate;
         if (Battery <= 0.0f)
             ui.GameOver();
