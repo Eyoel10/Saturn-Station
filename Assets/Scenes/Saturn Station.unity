@@ -1123,6 +1123,10 @@ PrefabInstance:
       propertyPath: levelLoader
       value: 
       objectReference: {fileID: 1285104258}
+    - target: {fileID: 7274430827763060420, guid: 199278f5d93654ee582407bae0344604, type: 3}
+      propertyPath: batteryDrainRate
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7861145611569703192, guid: 199278f5d93654ee582407bae0344604, type: 3}
       propertyPath: m_Sprite
       value: 

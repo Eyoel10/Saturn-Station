@@ -23,6 +23,7 @@ public class Ship : MonoBehaviour
     SpriteRenderer shieldBubble;
     IEnumerator shieldBubbleCoroutine;
 
+    SaturnStationUI ui;
     QuestionDialog questionDialog;
 
     float EaseOut(float t)
@@ -98,6 +99,7 @@ public class Ship : MonoBehaviour
         shieldBubble = GameObject.Find("Shield").GetComponent<SpriteRenderer>();
         shieldBubble.gameObject.SetActive(false);
 
+        ui = FindFirstObjectByType<SaturnStationUI>();
         questionDialog = FindFirstObjectByType<QuestionDialogToDecimal>();
         //questionDialog = FindFirstObjectByType<QuestionDialogToFraction>();
 
@@ -131,6 +133,8 @@ public class Ship : MonoBehaviour
 
         Score += d.x * 10.0f;
         Battery -= Time.deltaTime * batteryDrainRate;
+        if (Battery <= 0.0f)
+            ui.GameOver();
 
         // Rotate ship.
         transform.rotation = Quaternion.Euler(0.0f, 0.0f, vertical * 45.0f);
@@ -152,9 +156,7 @@ public class Ship : MonoBehaviour
             Shield -= 20.0f;
             ActivateShieldBubble();
             if (Shield <= 0.0f)
-            {
-                SceneManager.LoadScene("Bubble Buster");
-            }
+                ui.GameOver();
         }
     }
 

@@ -35,9 +35,20 @@ public class SaturnStationUI : MonoBehaviour
     Label score;
     ProgressBar battery, shield;
 
+    VisualElement gameOver;
+    Label finalScore;
+
     public void SetHudVisbility(bool isVisible)
     {
         hud.style.visibility = isVisible ? Visibility.Visible : Visibility.Hidden;
+    }
+
+    public void GameOver()
+    {
+        Time.timeScale = 0.0f;
+        SetHudVisbility(false);
+        gameOver.style.visibility = Visibility.Visible;
+        finalScore.text = $"Final score: {ship.Score:0} km";
     }
 
     void Awake()
@@ -86,6 +97,15 @@ public class SaturnStationUI : MonoBehaviour
 
         battery = new ProgressBar(Root.Q("battery"), () => ship.Battery);
         shield = new ProgressBar(Root.Q("shield"), () => ship.Shield);
+
+        gameOver = Root.Q("game-over");
+        finalScore = Root.Q<Label>("final-score");
+
+        Button playAgain = Root.Q<Button>("play-again");
+        playAgain.clicked += () =>
+        {
+            SceneManager.LoadScene(0);
+        };
     }
 
     void Update()
@@ -93,13 +113,5 @@ public class SaturnStationUI : MonoBehaviour
         score.text = $"SCORE: {ship.Score:0} KM";
         battery.UpdateValue();
         shield.UpdateValue();
-        if (ship.Battery <= 0)
-        {
-            SceneManager.LoadScene(0);
-        }
-        if (ship.Shield <= 0)
-        {
-            SceneManager.LoadScene(0);
-        }
     }
 }
