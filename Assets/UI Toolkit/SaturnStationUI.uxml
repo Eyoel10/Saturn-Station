@@ -31,6 +31,7 @@
                 <ui:VisualElement name="controls-down" class="controls-button" style="top: auto; left: 31px; bottom: 2px;" />
                 <ui:VisualElement name="controls-right" class="controls-button" style="top: auto; left: 60px; bottom: 31px;" />
             </ui:VisualElement>
+            <ui:Label text="Label" name="popup" class="textbox" style="position: absolute; visibility: hidden;" />
         </ui:VisualElement>
         <ui:VisualElement name="question-dialog-to-decimal" class="dialog" style="visibility: hidden;">
             <ui:VisualElement class="flex-row">
@@ -102,9 +103,9 @@
         </ui:VisualElement>
         <ui:VisualElement name="game-over" class="dialog" style="visibility: hidden;">
             <ui:VisualElement style="align-items: center;">
-                <ui:Label text="Game over!" class="textbox" style="font-size: 24px;" />
+                <ui:Label text="Game over&#10;Your battery ran out!" name="game-over-message" class="textbox" style="font-size: 24px;" />
                 <ui:Label text="Final score: 1000 km" name="final-score" />
-                <ui:Button text="Play again" name="play-again" class="submit" style="width: 120px;">
+                <ui:Button text="Play again" name="play-again" class="submit" style="width: 116px;">
                     <ui:VisualElement />
                 </ui:Button>
             </ui:VisualElement>
