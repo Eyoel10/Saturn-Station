@@ -265,7 +265,6 @@ MonoBehaviour:
   instanceCount: 10
   minTimeToSpawn: 0.5
   maxTimeToSpawn: 3
-  screenSizeWorld: {x: 0, y: 0}
   minScale: 1
   maxScale: 3
   minSpeed: 1
@@ -305,7 +304,6 @@ MonoBehaviour:
   instanceCount: 3
   minTimeToSpawn: 3
   maxTimeToSpawn: 8
-  screenSizeWorld: {x: 0, y: 0}
 --- !u!114 &212282539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -322,7 +320,6 @@ MonoBehaviour:
   instanceCount: 3
   minTimeToSpawn: 3
   maxTimeToSpawn: 8
-  screenSizeWorld: {x: 0, y: 0}
 --- !u!1 &476455719
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,6 +1074,10 @@ PrefabInstance:
     - target: {fileID: 3378848275983905876, guid: f59aec3c41e3d4c3b8864478b3eee077, type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 3378848275983905876, guid: f59aec3c41e3d4c3b8864478b3eee077, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7295914616486528984, guid: f59aec3c41e3d4c3b8864478b3eee077, type: 3}
       propertyPath: objectsToPreserve.Array.size

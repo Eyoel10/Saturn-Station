@@ -99,6 +99,11 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(name));
     }
 
+    public void LoadaScene(int index)
+    {
+        StartCoroutine(LoadLevel(index));
+    }
+
     public void Quit()
     {
         Application.Quit();
