@@ -39,6 +39,8 @@ public class SaturnStationUI : MonoBehaviour
     Label gameOverMessage;
     Label finalScore;
 
+    VisualElement exitConfirm;
+
     public void SetHudVisbility(bool isVisible)
     {
         hud.style.visibility = isVisible ? Visibility.Visible : Visibility.Hidden;
@@ -112,6 +114,31 @@ public class SaturnStationUI : MonoBehaviour
         {
             Time.timeScale = 1.0f;
             SceneManager.LoadScene("MainMenu");
+        };
+
+        exitConfirm = Root.Q("exit-confirm");
+
+        Button exit = Root.Q<Button>("exit");
+        exit.clicked += () =>
+        {
+            Time.timeScale = 0.0f;
+            SetHudVisbility(false);
+            exitConfirm.style.visibility = Visibility.Visible;
+        };
+
+        Button exitConfirmYes = Root.Q<Button>("exit-confirm-yes");
+        exitConfirmYes.clicked += () =>
+        {
+            Time.timeScale = 1.0f;
+            SceneManager.LoadScene("MainMenu");
+        };
+
+        Button exitConfirmNo = Root.Q<Button>("exit-confirm-no");
+        exitConfirmNo.clicked += () =>
+        {
+            Time.timeScale = 1.0f;
+            SetHudVisbility(true);
+            exitConfirm.style.visibility = Visibility.Hidden;
         };
     }
 

@@ -246,14 +246,6 @@ Toggle > .unity-toggle__input {
     -unity-text-outline-width: 2px;
 }
 
-.bg-gray {
-    -unity-background-image-tint-color: rgb(128, 128, 128);
-}
-
-.bg-green {
-    -unity-background-image-tint-color: rgb(0, 255, 0);
-}
-
 .submit {
     border-top-width: 0;
     border-right-width: 0;
@@ -303,4 +295,65 @@ Toggle > .unity-toggle__input {
 
 .progress.flash .progress-number {
     margin-top: -2px;
+}
+
+.exit {
+    background-image: url("project://database/Assets/Textures/Saturn%20Station/UI/Interactables/Buttons/Close.png?fileID=2800000&guid=edc65477deb5b405f85a018767e47d41&type=3#Close");
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-bottom: 8px;
+    padding-left: 8px;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+.exit:hover {
+    -unity-background-image-tint-color: rgb(186, 186, 186);
+}
+
+.button {
+    padding-top: 6px;
+    padding-right: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+    border-left-color: rgb(106, 106, 106);
+    border-right-color: rgb(106, 106, 106);
+    border-top-color: rgb(106, 106, 106);
+    border-bottom-color: rgb(106, 106, 106);
+    background-color: rgb(161, 161, 161);
+}
+
+.button:hover {
+    background-color: rgb(142, 142, 142);
+}
+
+.button.bg-red:hover {
+    background-color: rgb(214, 0, 0);
+}
+
+.bg-gray {
+    -unity-background-image-tint-color: rgb(128, 128, 128);
+}
+
+.bg-green {
+    -unity-background-image-tint-color: rgb(0, 255, 0);
+}
+
+.bg-red {
+    background-color: rgb(255, 0, 0);
 }
