@@ -15,4 +15,4 @@ Use this command on Windows Powershell:
 
 Then go to this link:
     localhost:5001
-
+Click on ssbuild file in Directory
