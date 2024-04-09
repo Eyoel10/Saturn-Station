@@ -7,7 +7,7 @@ Note: The website is only accessible from within the UWO network (e.g. on campus
 
 Alternatively, you can host the website yourself using Python.
 
-In the "ssbuild" directory, run this command:
+In the "ssbuild" directory (included in OWL submission), run this command:
     python3 -m http.server -b localhost 5001
 
 Then go to this link:
